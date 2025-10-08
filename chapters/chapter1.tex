@@ -1,0 +1,527 @@
+
+\section*{1. Introduction}
+
+The success of Maxwell's equations has led to electrodynamics 
+being normally formulated in terms of fields that have degrees 
+of freedom independent of the particles in them. However, Gauss 
+suggested that an action--at--a--distance theory in which the 
+action travelled at a finite velocity might be possible. 
+This idea was developed by Wheeler and Feynman~\cite{2,3} who derived 
+their theory from an action principle that involved only direct 
+interactions between pairs of particles. A feature of this theory 
+was that the `pseudo'--fields introduced are the half--retarded 
+plus half--advanced fields calculated from the world--lines of 
+the particles. 
+
+However, Wheeler and Feynman, and, in a different way, Hogarth~(3), 
+were able to show that, provided certain cosmological conditions 
+were satisfied, these fields could combine to give the observed field. 
+Hoyle and Narlikar~\cite{4} extended the theory to general space--times 
+and obtained similar theories for their `C'--field~\cite{5} and for the 
+gravitational field~~\cite{6}. It is with these theories that this chapter 
+is concerned.
+
+It will be shown that in an expanding universe the advanced 
+fields are infinite, and the retarded fields finite. 
+This is because, unlike electric charges, all masses have the same sign.
+
+\section*{2. The Boundary Condition}
+
+Hoyle and Narlikar derive their theory from the action:
+\[
+A = \sum_{a \ne b} \sum \iint G(a,b)\, da\, db ,
+\]
+where the integration is over the world-lines of particles a, b...
+In this expression G is a Green function
+that satisfies the wave equation: 
+
+\[
+G(x,x')_{;ij}\, g^{ij} + \tfrac{1}{6} R\, G(x,x')
+= \frac{\delta^{4}(x,x')}{\sqrt{-g}} \, .
+\]
+
+
+where S is the determinant of g_{{ij}}
+Since the double sum in the action A is symmetrical between all pailrs of
+particles a, b, only that part of G(a,b) that is symmetrical between a and b will contribute to the action
+i.e. the action can be written
+
+\[
+A = \sum_{a \ne b} \sum \iint G^{*}(a,b)\, da\, db
+\]
+
+\noindent
+where \quad 
+\( G^{*}(a,b) = \tfrac{1}{2} G(a,b) + \tfrac{1}{2} G(b,a) \).
+
+\medskip
+
+Thus \quad \( G^{*} \) \quad must be the time-symmetric Green function, and can be written:
+
+\[
+G^{*} = \tfrac{1}{2} G_{\text{ret}} + \tfrac{1}{2} G_{\text{adv}}
+\qquad \text{where } G_{\text{ret}}
+\]
+and G_{\text{adv}} are the retarded and advanced Green functions.
+By requiring that the action be stationary under variations
+of the g_{\text{ij}}, Hoyle and Narlikar obtain the field-equations:
+
+\[
+\Biggl[
+\sum_{a \ne b} \sum \tfrac{1}{6} m^{(a)}(x)\, m^{(b)}(x)
+\Biggr]
+\left( R_{ik} - \tfrac{1}{2} g_{ik} R \right)
+\]
+
+\[
+= - T_{ik}
++ \sum_{a \ne b} \sum \tfrac{1}{3} m^{(a)}
+\Bigl[
+g_{ik} m^{(b)r}{}_{;r}
+- m^{(b)}_{;ik}
+\Bigr]
++ 2 \bigl( m^{(a)}_{il}\, m^{(b)}_{j}{}^{l} \bigr)
+- \tfrac{1}{4} g_{ik}\, m^{(a);r}\, m^{(b)}_{j;r}
+\]
+where \quad 
+\( m^{(a)}(x) = \int G^{*}(x,a)\, da \).
+
+\medskip
+
+However, as a consequence of the particular choice of Green function, 
+the contraction of the field--equations is satisfied identically. 
+There are thus only 9 equations for the 10 components of \( g_{ij} \) 
+and the system is indeterminate.
+
+\medskip
+
+Hoyle and Narlikar therefore impose 
+\(\sum m^{(a)} = m_{0} = \text{const.}\), as the tenth equation. 
+By then making the `smooth--fluid' approximation, that is by putting
+
+\[
+\sum_{a \ne b} \sum m^{(a)} m^{(b)} \approx m_{0}^{2},
+\]
+
+they obtain the Einstein field--equations:
+
+\[
+\tfrac{1}{6} m_{0}^{2}\left( R_{ik} - \tfrac{1}{2} R g_{ik} \right) 
+= -T_{ik}.
+\]
+
+\medskip
+
+There is an important difference, however, between these field--equations 
+in the direct--particle interaction theory and in the usual general theory 
+of relativity. In the general theory of relativity, any metric that satisfies the the field--equations is admissible, but in the direct--particle 
+interaction theory only those solutions of the field--equations 
+are admissible that satisfy the additional requirement:
+
+\[
+m_{0}(x) = \sum m^{(a)}(x) = \sum \int G^{*}(x,a)\, da
+= \tfrac{1}{2} \sum \int G_{\text{ret}}(x,a)\, da 
++ \tfrac{1}{2} \sum \int G_{\text{adv}}(x,a)\, da
+\]
+
+\medskip
+
+This requirement is highly restrictive; it will be shown that it 
+is not satisfied for the cosmological solutions of the Einstein 
+field--equations, and it appears that it cannot be satisfied for 
+any models of the universe that either contain an infinite amount 
+of matter or undergo infinite expansion.
+
+\medskip
+
+The difficulty is similar to that occurring in Newtonian theory 
+when it is recognized that the universe might be infinite.  
+
+The Newtonian potential \(\phi\) obeys the equation:
+
+\[
+\square \phi = - \kappa \rho \qquad (\rho > 0),
+\]
+
+where \(\rho\) is the density.
+In an infinite static universe, \(\phi\) would be infinite, since 
+the source always has the same sign. The difficulty was resolved 
+when it was realized that the universe was expanding, since 
+in an expanding universe the retarded solution of the above 
+equation is finite by a sort of `red--shift' effect. The 
+advanced solution will be infinite by a `blue--shift' effect. 
+This is unimportant in Newtonian theory, since one is free 
+to choose the solution of the equation and so may ignore the 
+infinite advanced solution and take simply the finite 
+retarded solution.
+
+\medskip
+
+Similarly in the direct--particle interaction theory the 
+\(m\) field satisfies the equation:
+
+\[
+\square m - \tfrac{1}{6} R m = \mathcal{N} \qquad (\mathcal{N} > 0),
+\]
+
+where \(\mathcal{N}\) is the density of world--lines of particles. 
+As in the Newtonian case, one may expect that the effect of the 
+expansion of the universe will be to make the retarded solution 
+finite and the advanced solution infinite. However, one is 
+now not free to choose the finite retarded solution, for the 
+equation is derived from a direct--particle interaction action--principle 
+symmetric between pairs of particles, and one must choose for \(m\) 
+half the sum of the retarded and advanced solutions. We would expect 
+this to be infinite, and this is shown to be so in the next section.
+\section*{3. The Cosmological Solutions}
+
+The Robertson--Walker cosmological metrics have the form
+\[
+ds^{2} = dt^{2} - R^{2}(t) \left[ \frac{dr^{2}}{1 - \kappa r^{2}} 
++ r^{2}\bigl(d\theta^{2} + \sin^{2}\theta \, d\phi^{2}\bigr) \right].
+\]
+
+Since they are conformally flat, one can choose coordinates in which they become
+\[
+ds^{2} = \Omega^{2} \bigl[ d\tau^{2} - d\rho^{2} - \rho^{2}(d\theta^{2} + \sin^{2}\theta \, d\phi^{2}) \bigr]
+= \Omega^{2} \eta_{ab}\, dx^{a} dx^{b},
+\]
+where \(\eta_{ab}\) is the flat--space metric tensor and
+\[
+\Omega = \Omega(\tau,\rho) = \frac{R(t)}{\sqrt{[t + \tfrac{1}{4}\kappa(\tau+\rho)^{2}][t + \tfrac{1}{4}\kappa(\tau-\rho)^{2}]}}. \tag{7}
+\]
+
+For example, for the Einstein--de Sitter universe
+\[
+\kappa = 0, \quad 
+R(t) = \left(\tfrac{t}{T}\right)^{2/3}, 
+\qquad (0 < t < \infty),
+\]
+\[
+\Omega = R \cdot \left(\tfrac{\tau}{T}\right)^{2/3}, 
+\qquad (0 < \tau < \infty),
+\]
+\[
+\rho = \tau^{2/3}\, \xi^{1/3}.
+\]
+
+For the steady--state (de Sitter) universe
+\[
+\kappa = 0, \quad R(t) = e^{t/T}, 
+\qquad (-\infty < t < \infty).
+\]
+
+\[
+\Omega = R \cdot \frac{1}{\tau}, 
+\qquad (-\infty < t < \infty),
+\]
+\[
+r = \rho \left( \frac{\tau}{T} - T e^{t/T} \right).
+\]
+
+The Green function \( G^{*}(a,b) \) obeys the equation
+\[
+\square G^{*}(a,b) - \tfrac{1}{6} R\, G^{*}(a,b) 
+= \frac{\delta^{4}(a,b)}{\sqrt{-g}}.
+\]
+
+From this it follows that
+\[
+\frac{1}{\Omega^{2}} \frac{\partial}{\partial x^{a}}
+\left( \Omega^{2} \eta^{ab} \frac{\partial}{\partial x^{b}} G^{*} \right)
+= \frac{1}{\Omega^{2}} \frac{\partial}{\partial x^{a}}
+\left( \eta^{ab} \frac{\partial}{\partial x^{b}} S \right)
+= \Omega^{-3}\, \delta^{4}(a,b).
+\]
+
+If we let \( G^{*} = \Omega^{-1} S \), then
+\[
+\Omega^{2} \frac{\partial}{\partial x^{a}}
+\left( \eta^{ab} \frac{\partial}{\partial x^{b}} S \right)
+= \delta^{4}(a,b).
+\]
+
+This is simply the flat--space Green function equation, and hence
+\[
+G^{*}(t_{1},0; t_{2},\rho) 
+= \frac{\Omega(t_{1})}{8\pi \, \Omega(t_{2}) \, \rho}
+\Bigl[ \delta(\rho - (t_{2}-t_{1})) + \delta(\rho + (t_{2}-t_{1})) \Bigr].
+\]
+
+The \(m\)--field is given by
+\[
+m(t,x) = \int G^{*} \mathcal{N}\, \sqrt{-g}\, dx
+= \tfrac{1}{2}(m_{\text{ret}} + m_{\text{adv}}).
+\]
+
+For universes without creation (e.g.\ the Einstein--de Sitter universe),
+\[
+\mathcal{N} = R^{3} n, \qquad n = \text{const.}
+\]
+
+For Universes with creation (steady state) 
+\(\mathcal{N} = n, \quad n = \text{const.}\)
+
+\[
+M_{\text{adv}}(\tau_{1}) = \Omega^{-1}(\tau_{1}) 
+\int \frac{\mathcal{N}\,\Omega^{3}(\tau_{2})}{4\pi r}\, 4\pi r^{2}\, d\tau_{2},
+\]
+
+where the integration is over the future light cone. 
+This will normally be infinite in an expanding universe, e.g.\ in the Einstein--de Sitter universe:
+
+\[
+M_{\text{adv}}(\tau_{1}) 
+= \left(\frac{\tau_{1}}{T}\right)^{-2} 
+\int_{\tau_{1}}^{\infty} n \left(\tfrac{\tau_{2}}{T}\right)^{2}\, d\tau_{2}
+= \infty.
+\]
+
+In the steady--state universe
+\[
+M_{\text{adv}}(\tau_{1}) 
+= \left(\tfrac{-T}{\tau_{1}}\right)^{-1} 
+\int_{\tau_{1}}^{0} n \left(\tfrac{-T}{\tau_{2}}\right)^{3} (\tau_{2}-\tau_{1})\, d\tau_{2}
+= \infty.
+\]
+
+\medskip
+
+By contrast, on the other hand, we have
+\[
+M_{\text{ret}}(\tau_{1}) = \Omega^{-1}(\tau_{1}) 
+\int \frac{\mathcal{N}\,\Omega^{3}}{4\pi r}\, 4\pi r^{2}\, dr,
+\]
+
+where the integration is over the past light cone. This will Normally be finite, e.g.\ in the Einstein--de Sitter universe
+\[
+M_{\text{ret}}(\tau_{1}) 
+= \left(\frac{\tau_{1}}{T}\right)^{-2} 
+\int_{0}^{\tau_{1}} n \left(\tfrac{\tau_{2}}{T}\right)^{2} (\tau_{2}-\tau_{1})\, d\tau_{2}
+= \tfrac{1}{2} n T^{2}.
+\]
+
+While in the steady--state universe
+\[
+M_{\text{ret}}(\tau_{1}) 
+= \left(\tfrac{-T}{\tau_{1}}\right)^{-1} 
+\int_{-\infty}^{\tau_{1}} n \left(\tfrac{-T}{\tau_{2}}\right)^{3} (\tau_{2}-\tau_{1})\, d\tau_{2}
+= \tfrac{1}{2} n T^{2}.
+\]
+
+Thus it can be seen that the solution \(m = \text{const.}\) of the equation
+\[
+\square m + \tfrac{1}{6} R m = \mathcal{N}
+\]
+is not, in a cosmological metric, the half--advanced plus half--retarded solution 
+since this would be infinite. In fact, in the case of the Einstein--de Sitter 
+and steady--state metrics, it is the pure retarded solution.
+
+\section*{4. The `C'--Field}
+
+Hoyle and Narlikar derive their direct--particle interaction theory of the 
+`C'--field from the action
+\[
+A = \sum_{a \ne b} \iint \hat{G}(a,b)\, i_{a} \, k_{b}\, da^{4} db^{4}.
+\]
+
+where the suffixes \(a, b\) refer to differentiation of 
+\(\hat{G}(a,b)\) on the world--lines of \(a, b\) respectively.  
+\(\hat{G}\) is a Green function obeying the equation
+
+\[
+\square \hat{G}(x,x') = \frac{\delta^{4}(x,x')}{\sqrt{-g}}.
+\]
+
+We define the `C'--field by
+\[
+C(x) = \sum \hat{G}(x,a)\, i_{a}\, da^{i},
+\]
+
+and the matter--current \(J^{\kappa}\) by
+\[
+J^{\kappa}(y) = \sum \int \delta^{4}(y,b)\, db^{\kappa}.
+\]
+
+Then
+\[
+C(x) = \int \hat{G}(x,y)\, J^{\kappa}(y)_{;\kappa}\, \sqrt{-g}\, dx',
+\]
+
+so that
+\[
+\square C = J^{\kappa}{}_{;\kappa}.
+\]
+
+\medskip
+
+We thus see that the sources of the `C'--field are the places 
+where matter is created or destroyed.  
+
+As in the case of the \(m\)--field, the Green function must be 
+time--symmetric, that is
+\[
+\hat{G}(a,b) = \tfrac{1}{2}\, \hat{G}_{\text{ret}}(a,b) 
++ \tfrac{1}{2}\, \hat{G}_{\text{adv}}(a,b)
+\]
+Hoyle and Narlikar claim that if the action of the 
+`C'--field is included along with the action of the `m'--field, 
+a universe will be obtained that approximates to the steady--state 
+universe on a large scale although there may be local irregularities. 
+In this universe, the value of \(C\) will be finite and its gradient 
+time--like and of unit magnitude.
+
+\medskip
+
+Given this universe, we may check it for consistency by calculating 
+the advanced and retarded `C'--fields and finding if their sum is finite. 
+We shall not do this directly but will show that the advanced field 
+is infinite while the retarded field is finite.
+
+\medskip
+
+Consider a region in space--time bounded by a three--dimensional 
+space--like hypersurface \(\mathcal{D}\) at the present time, 
+and the past light cone \(\Sigma\) of some point \(P\) to the future of \(\mathcal{D}\).
+
+By Gauss's theorem
+\[
+\int_{V} \square C \, \sqrt{-g}\, dx^{4} 
+= \int_{\Sigma + \mathcal{D}} \frac{\partial C}{\partial n}\, dS
+= \int J^{\kappa}{}_{;\kappa}\, \sqrt{-g}\, dx^{4}.
+\]
+
+Let the advanced field produced by sources within \(V\) be \(C'\).  
+Then \(C'\) and \(\frac{\partial C'}{\partial n}\) will be zero on \(\Sigma\), and hence
+
+
+\[
+\int_{V} J^{\kappa}{}_{;\kappa} \, \sqrt{-g}\, dx^{4} 
+= \int_{\mathcal{D}} \frac{\partial C'}{\partial n}\, dS.
+\]
+
+But \(J^{\kappa}{}_{;\kappa}\) is the rate of creation of matter \(= n\) (const.) 
+in the steady--state universe, and hence
+\[
+\int_{\mathcal{D}} \frac{\partial C'}{\partial n}\, dS = nV.
+\]
+
+As the point \(P\) is taken further into the future, the volume 
+of the region \(V\) tends to infinity. However, the area of the 
+hypersurface \(\mathcal{D}\) tends to a finite limit owing to horizon 
+effects. Therefore the gradient \(\tfrac{\partial C'}{\partial n}\) must be infinite.  
+A similar calculation shows the gradient of the retarded 
+field to be finite. Their sums cannot therefore give the 
+field of unit gradient required by the Hoyle--Narlikar theory.
+
+\medskip
+
+It is worth noting that this result was obtained without 
+assumptions of a smooth distribution of matter or of conformal flatness.
+\section*{5. Conclusion}
+
+It is one of the weaknesses of the Einstein theory of 
+relativity that although it furnishes field equations it does 
+not provide boundary conditions for them. Thus it does not 
+give a unique model for the universe but allows a whole series 
+of models. Clearly a theory that provided boundary conditions 
+and thus restricted the possible solutions would be very 
+attractive. The Hoyle--Narlikar theory does just that (the 
+requirement that \( m = \tfrac{1}{2} m_{\text{ret}} + \tfrac{1}{2} m_{\text{adv}} \) 
+is equivalent to a boundary condition). Unfortunately, as we 
+have seen above, this condition excludes those models that 
+seem to correspond to the actual universe, namely the 
+Robertson--Walker models.
+
+\medskip
+
+The calculations given above have considered the universe 
+as being filled with a uniform distribution of matter. This 
+is legitimate if we are able to make the `smooth--fluid' 
+approximation to obtain the Einstein equations. Alternatively, 
+if this approximation is invalid, it cannot be said that the 
+theory yields the Einstein equations.
+
+\medskip
+
+It might possibly be that local irregularities could make 
+\(m_{\text{adv}}\) finite, but this has certainly not been demonstrated 
+and seems unlikely in view of the fact that, in the Hoyle--Narlikar 
+direct--particle interaction theory of their `C'--field,
+
+which is derived from a very similar action--principle, it can 
+be shown without assuming a smooth distribution that the 
+advanced `C' field will be infinite in an expanding universe 
+with creation.
+
+\medskip
+
+The reason that it is possible to formulate a direct--particle 
+interaction theory of electrodynamics that does not encounter 
+this difficulty of having the advanced solution infinite is 
+that in electrodynamics there are equal numbers of sources 
+of positive and negative sign. Their fields can cancel each 
+other out and the total field can be zero apart from local 
+irregularities. This suggests that a possible way to save the 
+Hoyle--Narlikar theory would be to allow masses of both positive 
+and negative sign. The action would be
+\[
+A = \sum_{a \ne b} q_{a} q_{b} \iint G^{*}(a,b)\, da\, db, 
+\qquad (q_{a}, q_{b} = \pm 1),
+\]
+where \(q_{a}, q_{b}\) are gravitational charges analogous to 
+electric charges. Particles of positive \(q\) in a positive 
+`m'--field and particles of negative \(q\) in a negative 
+`m'--field would have the normal gravitational properties, 
+that is, they would have positive gravitational and inertial masses.
+
+A particle of negative \(q\) in a positive `m'--field would 
+still follow a geodesic. Therefore it would be attracted by 
+a particle of positive \(q\). Its own gravitational effect 
+however would be to repel all other particles. Thus it would 
+have the properties of the negative mass described by Bondi~(8), 
+that is, negative gravitational mass and negative inertial mass.
+
+\medskip
+
+Since there does not seem to be any matter having these 
+properties in our region of space (where \(m = \text{const.} > 0\)) 
+there must clearly be separation on a very large scale. It 
+would not be possible to identify particles of negative \(q\) 
+with antimatter, since it is known that antimatter has positive 
+inertial mass. However, the introduction of negative masses 
+would probably raise more difficulties than it would solve.
+
+
+
+
+
+
+\section*{References}
+
+\begin{enumerate}
+\item J. A. Wheeler and R. P. Feynman, 
+\textit{Rev. Mod. Phys.} \textbf{17}, 157 (1945).
+
+\item J. A. Wheeler and R. P. Feynman, 
+\textit{Rev. Mod. Phys.} \textbf{21}, 425 (1949).
+
+\item J. E. Hogarth, 
+\textit{Proc. Roy. Soc. A} \textbf{267}, 365 (1962).
+
+\item F. Hoyle and J. V. Narlikar, 
+\textit{Proc. Roy. Soc. A} \textbf{277}, 1 (1964a).
+
+\item F. Hoyle and J. V. Narlikar, 
+\textit{Proc. Roy. Soc. A} \textbf{282}, 178 (1964b).
+
+\item F. Hoyle and J. V. Narlikar, 
+\textit{Proc. Roy. Soc. A} \textbf{282}, 191 (1964c).
+
+\item L. Infeld and A. Schild, 
+\textit{Phys. Rev.} \textbf{68}, 250 (1945).
+
+\item H. Bondi, 
+\textit{Rev. Mod. Phys.} \textbf{29}, 423 (1957).
+\end{enumerate}
+

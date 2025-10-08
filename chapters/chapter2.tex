@@ -1,0 +1,897 @@
+\section*{1. Introduction}
+
+Perturbations of a spatially isotropic and homogeneous expanding 
+universe have been investigated in a Newtonian approximation by 
+Bonnor~\cite{Bonnor1957} and relativistically by Lifshitz~\cite{Lifshitz1946}, 
+Lifshitz and Khalatnikov~\cite{LifshitzKhalatnikov1963}, 
+and Irvine~\cite{Irvine1965}. Their method was to consider small 
+variations of the metric tensor. This has the disadvantage that the 
+metric tensor is not a physically significant quantity, since one 
+cannot directly measure it, but only its second derivatives. 
+It is thus not obvious what the physical interpretation of a given 
+perturbation of the metric is. Indeed it need have no physical 
+significance at all, but merely correspond to a coordinate transformation. 
+Instead it seems preferable to deal in terms of perturbations of the 
+physically significant quantity, the curvature.
+\section*{2. Notation}
+
+Space--time is represented as a four--dimensional Riemannian space 
+with metric tensor \(g_{ab}\) of signature \(+2\). Covariant differentiation 
+in this space is indicated by a semi--colon. Square brackets around 
+indices indicate antisymmetrisation and round brackets symmetrisation.  
+The conventions for the Riemann and Ricci tensors are:
+\[
+\nabla_{a;[bc]} = 2\, R^{p}{}_{a c b}\, \nabla_{p},
+\]
+\[
+R_{ab} = R^{p}{}_{a p b}.
+\]
+
+\(\eta_{abcd}\) is the alternating tensor.  
+
+Units are such that \(\kappa\), the gravitational constant, and \(c\), the speed of light, are one
+
+
+\section*{3. The Field Equations}
+
+We assume the Einstein equations:
+\[
+R_{ab} - \tfrac{1}{2} g_{ab} R = -T_{ab}
+\]
+where \(T_{ab}\) is the energy--momentum tensor of matter.  
+We will assume that the matter consists of a perfect fluid. Then,
+\[
+T_{ab} = \mu\, u_{a} u_{b} + p\, h_{ab}
+\]
+where \(u_{a}\) is the velocity of the fluid, \(u_{a} u^{a} = -1\) :
+\[
+\mu \ \text{is the density}, \qquad 
+p \ \text{is the pressure},
+\]
+\[
+h_{ab} = g_{ab} + u_{a} u_{b} \quad 
+\text{is the projection operator into the hyperplane orthogonal to } u_{a},
+\]
+\[
+h_{ab} u^{b} = 0.
+\]
+
+\medskip
+
+We decompose the gradient of the velocity vector \(u_{a}\) as
+\[
+u_{a;b} = \omega_{ab} + \sigma_{ab} + \tfrac{1}{3} h_{ab} \, \theta - \dot{u}_{a} u_{b}
+\]
+where
+\[
+\dot{u}_{a} = u_{a;b} u^{b} \quad \text{is the acceleration},
+\]
+\[
+\theta = u^{a}{}_{;a} \quad \text{is the expansion},
+\]
+\[
+\sigma_{ab} = u_{(c;d)} h^{c}{}_{a} h^{d}{}_{b} - \tfrac{1}{3} h_{ab} \theta 
+\quad \text{is the shear},
+\]
+\[
+\omega_{ab} = u_{[c;d]} h^{c}{}_{a} h^{d}{}_{b} 
+\quad \text{is the rotation of the flow lines } u^{a}.
+\]
+
+We define the rotation vector \(\omega_{a}\) as
+\[
+\omega_{a} = \tfrac{1}{2} \eta_{abcd} \, \omega^{cd} u^{b}.
+\]
+
+\medskip
+
+We may decompose the Riemann tensor \(R_{abcd}\) into the Ricci tensor 
+\(R_{ab}\) and the Weyl tensor \(C_{abcd}\):
+\[
+R_{abcd} = C_{abcd} - g_{a[c} R_{d]b} + g_{b[c} R_{d]a} - \tfrac{1}{3} R g_{a[c} g_{d]b},
+\]
+\[
+C_{abcd} = C_{[ab][cd]}, \qquad C^{a}{}_{bca} = 0 = C_{a[ bcd ]}.
+\]
+
+\(C_{abcd}\) is that part of the curvature that is not determined locally by 
+the matter. It may thus be taken as representing the free gravitational 
+field (Jordan, Ehlers and Kundt\cite{JordanKundt1960}).  
+We may decompose it into its ``electric'' and ``magnetic'' components:
+\[
+E_{ab} = - C_{a b p q}\, u^{p} u^{q}, 
+\]
+\[
+H_{ab} = - \tfrac{1}{2} C_{a p q r}\, \eta^{qr}{}_{bs}\, u^{p} u^{s},
+\]
+\[
+C_{ab}{}^{cd} 
+= 8 u_{[a} E_{b]}{}^{[c} u^{d]} 
++ 4 \delta_{[a}{}^{[c} E_{b]}{}^{d]}
+- 2 \eta_{ab}{}^{cd} u^{p} H_{p}{}^{[c} u^{d]}
+- 2 \eta^{cdrs} u_{r} H_{s[a} u_{b]} .
+\]
+
+\[
+E_{ab} = E_{(ab)}, 
+\qquad H_{ab} = H_{(ab)},
+\]
+\[
+E_{a}{}^{a} = H_{a}{}^{a} = 0,
+\]
+\[
+E_{ab} u^{b} = H_{ab} u^{b} = 0.
+\]
+
+\(E_{ab}\) and \(H_{ab}\) each have five independent components.  
+
+We regard the Bianchi identities,
+\[
+R_{ab[cd;e]} = 0,
+\]
+as field equations for the free gravitational field.  
+
+Then
+\[
+C_{abc d}{}^{d} = - R_{c[b;a]} + \tfrac{1}{6} g_{c[b} R_{;a]},
+\]
+(Kundt and Trümper\cite{KundtTrumper1962}).
+
+Using the decompositions given above, we may write these in a form 
+analogous to the Maxwell equations:
+\begin{align}
+h^{b}{}_{e} H_{bc;d} h^{cf} + 3 H_{ab} \omega^{b} - \eta_{abcd} u^{b} \sigma^{c}{}_{e} H^{de} 
+&= \tfrac{3}{2} h_{a}{}^{b} \mu_{;b}, \tag{1} \\[1ex]
+h^{b}{}_{e} E_{bc;d} h^{cf} + 3 E_{ab} \omega^{b} - \eta_{abcd} u^{b} \sigma^{c}{}_{e} E^{de} 
+&= (\mu + p) \, \omega_{a}, \tag{2} \\[1ex]
+\perp \dot{E}_{ab} + h^{c}{}_{(a} \eta_{b)cde} u^{c} H^{de} + E_{ab} \theta - E^{c}{}_{(a} \omega_{b)c} 
+&- E^{c}{}_{(a} \sigma_{b)c} - \eta_{cde(a} \eta_{bpqr} u^{c} u^{p} \sigma^{d}{}_{q} E^{er} \notag \\ 
+&+ 2 H^{c}{}_{(a} \eta_{b)cde} u^{c} \dot{u}^{e} = -\tfrac{1}{2} (\mu + p) \sigma_{ab}, \tag{3} \\[1ex]
+\perp \dot{H}_{ab} - h^{c}{}_{(a} \eta_{b)cde} u^{c} E^{de} + H_{ab} \theta - H^{c}{}_{(a} \omega_{b)c} 
+&- H^{c}{}_{(a} \sigma_{b)c} - \eta_{cde(a} \eta_{bpqr} u^{c} u^{p} \sigma^{d}{}_{q} H^{er} \notag \\ 
+&+ 2 H^{c}{}_{(a} \eta_{b)cde} u^{c} \dot{u}^{e} = 0. \tag{4}
+\end{align}
+
+where \(\perp\) indicates projection by \(h_{ab}\) orthogonal to \(u_{a}\) (c.f.\ Trümper (7)).  
+
+\medskip
+
+The contracted Bianchi identities give,
+\begin{align}
+(R_{ab} - \tfrac{1}{2} g_{ab} R)^{;b} &= - T_{ab}{}^{;b} = 0, \notag \\
+\dot{\mu} + (\mu + p) \theta &= 0, \tag{5} \\
+(\mu + p) \dot{u}_{a} + p_{,b} h^{b}{}_{a} &= 0. \tag{6}
+\end{align}
+
+The definition of the Riemann tensor is,
+\[
+u_{a;[bc]} = 2 R_{a p b c} u^{p}.
+\]
+
+Using the decompositions as above we may obtain what may be regarded 
+as ``equations of motion''.
+
+\begin{align}
+\dot{\theta} &= 2 \omega^{2} - 2 \sigma^{2} - \tfrac{1}{3} \theta^{2} + \dot{u}^{a}{}_{;a} 
+- \tfrac{1}{2} (\mu + 3p), \tag{7} \\[1ex]
+\perp \dot{\omega}_{ab} &= - \tfrac{2}{3} \omega_{ab} \theta 
++ 2 \sigma_{c[a} \omega_{b]}{}^{c} 
++ \dot{u}_{[p;q]} h^{p}{}_{a} h^{q}{}_{b}, \tag{8} \\[1ex]
+\perp \dot{\sigma}_{ab} &= E_{ab} - \omega_{ac} \omega^{c}{}_{b} - \sigma_{ac} \sigma^{c}{}_{b} 
+- \tfrac{2}{3} \sigma_{ab} \theta \notag \\
+&\quad - \tfrac{1}{3} h_{ab} (2 \omega^{2} - 2 \sigma^{2} + \dot{u}^{c}{}_{;c}) 
++ \dot{u}_{a} \dot{u}_{b} 
++ \dot{u}_{(p;q)} h^{p}{}_{a} h^{q}{}_{b}, \tag{9}
+\end{align}
+
+where \(\; 2\omega^{2} = \omega_{ab} \omega^{ab}, \quad 2\sigma^{2} = \sigma_{ab} \sigma^{ab}\).
+
+\medskip
+
+We also obtain what may be regarded as equations of constraint:
+\begin{align}
+\theta_{,b} h^{ba} &= \tfrac{3}{2} \Big[ 
+  (\omega_{bc;b} + \sigma^{c}{}_{b;c}) h^{ca} 
+  - \dot{u}^{b} (\omega_{ab} + \sigma_{ab}) \Big], \tag{10} \\[1ex]
+\omega^{a}{}_{;a} &= 2 \omega_{a} \dot{u}^{a}, \tag{11} \\[1ex]
+H_{ab} &= - h^{c}{}_{(a} \eta_{b)cde} u^{c} 
+\left( \omega^{d;e} + \sigma^{d;e} \right). \tag{12}
+\end{align}
+
+\medskip
+
+We consider perturbations of a universe that in the undisturbed state 
+is conformally flat, that is
+\[
+C_{abcd} = 0.
+\]
+
+By equations (1)–(3), this implies
+\[
+\sigma_{ab} = \omega_{ab} = 0, 
+\qquad h^{b}{}_{a} \mu_{;b} = 0, 
+\qquad \theta_{;b} h^{ba}.
+\]
+If we assume an equation of state of the form, $\mu = \mu(\rho)$,  
+then by (6), (10),
+\[
+\mu_{,b} h^{b}{}_{a} = 0 = \dot{\mu} u_{a}.
+\]
+
+This implies that the universe is spatially homogeneous and isotropic 
+since there is no direction defined in the 3-space orthogonal to $u_{a}$.
+
+In this universe we consider small perturbations of the motion 
+of the fluid and of the Weyl tensor. We neglect products of small 
+quantities and perform derivatives with respect to the undisturbed 
+metric. Since all the quantities we are interested in with the 
+exception of the scalars, $\mu, \dot{\mu}, \theta$ have unperturbed value zero, we 
+avoid perturbations that merely represent coordinate transformation 
+and have no physical significance.
+
+To the first order the equations (1)–(4) and (7)–(9) are
+\begin{align}
+E_{ab}{}^{;b} &= \tfrac{1}{3} h_{a}{}^{b} \mu_{,b}, \tag{13}\\
+H_{ab}{}^{;b} &= (\mu + h)\, \omega_{a}, \tag{14}\\
+\dot{E}_{ab} + E_{c(a}\theta + h^{c}{}_{(a}\eta_{b)de}u^{d}H^{e}{}_{c}{}^{;c} 
+  &= -\tfrac{1}{2}(\mu + h)\,\sigma_{ab}, \tag{15}\\
+\dot{H}_{ab} + H_{c(a}\theta - h^{c}{}_{(a}\eta_{b)de}u^{d}E^{e}{}_{c}{}^{;c} &= 0, \tag{16}\\
+\dot{\theta} &= -\tfrac{1}{3}\theta^{2} + \dot{u}^{a}{}_{;a} - \tfrac{1}{2}(\mu + 3h), \tag{17}\\
+\dot{\omega}_{ab} &= -\tfrac{2}{3}\omega_{ab}\theta + \dot{u}_{[a;p]} h^{p}{}_{b} h^{q}{}_{a}, \tag{18}\\
+\dot{\sigma}_{ab} &= E_{ab} - \tfrac{2}{3}\sigma_{ab}\theta - \tfrac{1}{3}h_{ab}\dot{u}^{c}{}_{;c}
+   + \dot{u}_{(p;q)} h^{p}{}_{a} h^{q}{}_{b}. \tag{19}
+\end{align}
+From these we see that perturbations of rotation or of $E_{ab}$ or $H_{ab}$ do 
+not produce perturbations of the expansion or the density. Nor do 
+perturbations of $E_{ab}$ and $H_{ab}$ produce rotational perturbations.  
+
+\subsection*{4. The Undisturbed Metric}
+
+Since in the unperturbed state the rotation and acceleration 
+are zero, $u_{a}$ must be hypersurface orthogonal.
+
+\[
+u_{a} = \tau_{,a},
+\]
+
+where $\tau$ measures the proper time along the world lines. As the 
+surfaces $\tau = \text{constant}$ are homogeneous and isotropic they must be 
+3-surfaces of constant curvature. Therefore the metric can be 
+written,
+
+\[
+ds^{2} = - d\tau^{2} + \Omega^{2} d\gamma^{2},
+\]
+
+where  
+
+\[
+\Omega = \Omega(\tau),
+\]
+
+\[
+d\gamma^{2} \quad \text{is the line element of a space of zero or unit positive or negative curvature.}
+\]
+
+We define $t$ by  
+
+\[
+\frac{dt}{d\tau} = \frac{1}{\Omega},
+\]
+
+then  
+
+\[
+ds^{2} = \Omega^{2} \left( -dt^{2} + d\gamma^{2} \right).
+\]
+
+In this metric,  
+
+\[
+u_{a} = (-\Omega, 0, 0, 0),
+\]
+
+\[
+\therefore \quad \theta = \frac{3 \dot{\Omega}}{\Omega} = \frac{3 \Omega'}{\Omega^{2}}
+\]
+
+\[
+\text{(prime denotes differentiation with respect to $t$).}
+\]
+Then, by (5), (7)
+\begin{align}
+\dot{\mu} &= -(\mu + h)\,\frac{3\dot{\Omega}}{\Omega}, \tag{20}\\[6pt]
+3\frac{\ddot{\Omega}}{\Omega} &= -\tfrac{1}{2}(\mu + 3h). \tag{21}
+\end{align}
+
+If we know the relation between $\mu$ and $h$, we may determine $\Omega$.  
+We will consider the two extreme cases, $h=0$ (dust) and $h=\tfrac{1}{3}\mu$ (radiation).  
+Any physical situation should lie between these.
+
+\subsubsection*{For $h = 0$}
+
+By (20), \quad $\mu = \dfrac{M}{\Omega^{3}}$, \quad $M = \text{const}.$
+
+\[
+\therefore \quad \frac{3}{M}\,\Omega \ddot{\Omega} - \tfrac{1}{2}\Omega^{2} = 0,
+\]
+
+\[
+\therefore \quad \frac{3}{M}\,\dot{\Omega}^{2} - \frac{1}{\Omega} = E, 
+\qquad E = \text{const}.
+\]
+
+\paragraph{(a) For $E>0$,}
+\[
+\Omega = \tfrac{1}{2E}\Big(\cosh \sqrt{\tfrac{E M}{3}}\,t - 1\Big), 
+\qquad 
+\tau = \tfrac{1}{2E}\Big(\sqrt{\tfrac{3}{E M}}\,\sinh \sqrt{\tfrac{E M}{3}}\,t + t \Big);
+\]
+
+\paragraph{(b) For $E=0$,}
+\[
+\Omega = \frac{M}{12}\,t^{2}, 
+\qquad 
+\tau = \frac{M}{36}\,t^{3};
+\]
+
+\paragraph{(c) For $E<0$,}
+\[
+\Omega = -\tfrac{1}{2E}\Big(1 - \cos \sqrt{-\tfrac{E M}{3}}\,t \Big), 
+\qquad 
+\tau = -\tfrac{1}{2E}\Big(t - \sqrt{\tfrac{3}{-E M}} \sin \sqrt{-\tfrac{E M}{3}}\,t \Big).
+\]
+
+\medskip
+$E$ represents the energy (kinetic + potential) per unit mass.  
+If it is non–negative the universe will expand indefinitely, otherwise it will eventually contract again.
+By the Gauss–Codazzi equations $^{*}R$, the curvature of the 
+hypersurface $\tau = \text{const.}$ is  
+
+\[
+^{*}R = 2\left(-\tfrac{1}{3}\theta^{2} + \mu\right)
+      = -\frac{2 E M}{\Omega^{2}}.
+\]
+
+If $E > 0$, \quad $^{*}R = -\dfrac{6}{\Omega^{2}}, \qquad M = \dfrac{3}{E}$;
+
+\[
+E = 0, \quad {}^{*}R = 0;
+\]
+
+If $E < 0$, \quad $^{*}R = \dfrac{6}{\Omega^{2}}, \qquad M = -\dfrac{3}{E}.
+\]
+
+\subsubsection*{For $h = \tfrac{1}{3}\mu$}
+
+\[
+\dot{\mu} = -4\frac{\dot{\Omega}}{\Omega},
+\]
+
+\[
+3\frac{\ddot{\Omega}}{\Omega} = -\mu, 
+\qquad \mu = \frac{M}{\Omega^{4}},
+\]
+
+\[
+\therefore \quad \frac{3}{M}\dot{\Omega}^{2} - \frac{1}{\Omega^{2}} = E.
+\]
+
+\paragraph{(a) For $E > 0$:}
+\[
+\Omega = \frac{1}{E}\sinh t, 
+\qquad \tau = \frac{1}{E}(\cosh t - 1), 
+\qquad {}^{*}R = -\frac{6}{\Omega^{2}};
+\]
+
+\paragraph{(b) For $E = 0$:}
+\[
+\Omega = t, 
+\qquad \tau = \tfrac{1}{2}t^{2}, 
+\qquad {}^{*}R = 0;
+\]
+
+\paragraph{(c) For $E < 0$:}
+\[
+\Omega = \frac{1}{E}\sin t, 
+\qquad \tau = \frac{1}{E}(\cos t - 1), 
+\qquad {}^{*}R = \frac{6}{\Omega^{2}}.
+\]
+
+\section*{5. Rotational Perturbations}
+
+By (6)
+\[
+\dot{u}_{[c;d]} h^{c}{}_{a} h^{d}{}_{b} 
+   = -\frac{\omega_{ab}\,\dot{h}}{\mu + h}.
+\]
+\[
+\dot{\omega}_{ab} = -\omega_{ab}\left(\tfrac{2}{3}\theta + \tfrac{\dot{h}}{\mu + h}\right).
+\]
+
+For $h = 0$,
+\[
+\omega = \frac{\omega_{0}}{\Omega^{2}}.
+\]
+
+For $h = \tfrac{\mu}{3}$,
+\[
+\dot{\omega} = -\omega\left(\tfrac{2}{3}\theta + \tfrac{1}{4}\frac{\dot{\mu}}{\mu}\right)
+= -\tfrac{5}{3}\omega\theta,
+\]
+\[
+\therefore \quad \omega = \frac{\omega_{0}}{\Omega^{5}}.
+\]
+
+Thus rotation dies away as the universe expands.  
+This is in fact a statement of the conservation of angular momentum in an expanding universe.
+
+\section*{6. Perturbations of Density}
+
+For $h = 0$ we have the equations,
+\[
+\dot{\mu} = -\mu\theta,
+\]
+\[
+\dot{\theta} = -\tfrac{1}{3}\theta^{2} - \tfrac{1}{2}\mu.
+\]
+
+These involve no spatial derivatives. Thus the behaviour of one 
+region is unaffected by the behaviour of another. Perturbations 
+will consist in some regions having slightly higher or lower values 
+of $\theta$ than the average. If the universe as whole has a value of $E$ 
+greater than zero, a small perturbation will still have $E$ greater 
+than zero and will continue to expand. It will not contract to form a galaxy. If the universe has a value of $E$ less than zero, a 
+small perturbation can contract. However it will only begin 
+contracting at a time $\delta\tau$ earlier than the whole universe begins 
+contracting, where  
+
+\[
+\frac{\delta\tau}{\tau_{c}} = \frac{\delta E}{E_{0}},
+\]
+
+$\tau_{c}$ is the time at which the whole universe begins contracting.  
+There is only any real instability when $E=0$. This case is of 
+measure zero relative to all the possible values $E$ can have.  
+However this cannot really be used as an argument to dismiss it 
+as there might be some reason why the universe should have $E=0$.
+
+For a region with energy $- \delta E$, in a universe with $E=0$,
+
+\[
+\Omega = \frac{1}{4\delta E}\left(t^{2} - \frac{t^{4}}{12} + \cdots \right),
+\]
+
+\[
+\tau = \frac{1}{12\delta E}\left(t^{3} - \frac{t^{5}}{20} + \cdots \right),
+\]
+
+\[
+\mu = \frac{3}{6E\,\Omega^{2}} = \frac{4}{3}\tau^{-2}
+     \left(1 + \frac{(\delta E)^{2/3}}{2^{1/3}}\,\tau^{2/3} + \cdots \right).
+\]
+
+For $E=0$, \quad $\mu = \tfrac{4}{3}\tau^{-2}$.
+
+Thus the perturbation grows only as $\tau^{2/3}$.  
+This is not fast enough to produce galaxies from statistical fluctuations 
+even if these could occur. However, since an evolutionary universe has 
+a particle horizon (Rindler\,(8), Penrose\,(9)) different parts do not 
+communicate in the early stages. This makes it even more difficult for 
+statistical fluctuations to occur over a region until light had time 
+to cross the region.
+
+\subsubsection*{For $h = \tfrac{\mu}{3}$}
+
+\[
+\dot{\mu} = -\tfrac{4}{3}\mu\theta,
+\]
+\[
+\dot{\theta} = -\tfrac{1}{3}\theta^{2} - \mu + \dot{u}^{a}{}_{;a},
+\]
+\[
+\dot{u}_{a} = -\frac{h^{b}{}_{a}\,\mu_{,b}}{4\mu}.
+\]
+
+As before, a perturbation cannot contract unless it has a negative 
+value of $E$. The action of the pressure forces makes it still more 
+difficult for it to contract. Eliminating $\theta$,
+
+\[
+\mu \ddot{\mu} - \tfrac{5}{4}\dot{\mu}^{2} - \tfrac{5}{3}\mu^{3} + \tfrac{4}{3}\mu^{2}\dot{u}^{a}{}_{;a} = 0,
+\]
+
+\[
+\ddot{u}^{a} = \dot{u}^{a}{}_{;b}\,h^{b}{}_{a}{}^{b} + \dot{u}^{a}\dot{u}^{a}
+= -\tfrac{1}{4}\,h^{ac}\frac{(h^{b}{}_{a}\mu_{,b})_{;c}}{\mu}
+\quad \text{to our approximation.}
+\]
+
+\[
+h^{ac}\nabla_{c} h^{b}{}_{a}\nabla_{b}
+\]
+is the Laplacian in the hypersurface $\tau = \text{constant}$.  
+
+We represent the perturbation as a sum of eigenfunctions $S^{(n)}$ of 
+this operator, where  
+
+\[
+S^{(n)}{}_{;a}u^{a} = 0,
+\]
+
+\[
+h^{ac}(h^{b}{}_{a}S^{(n)}{}_{,b})_{;c} 
+= -\frac{n^{2}}{\Omega^{2}}\,S^{(n)}.
+\]
+
+These eigenfunctions will be hyperspherical and pseudohyperspherical 
+harmonics in cases (c) and (a) respectively and plane waves in case (b).  
+In case (c) $n$ will take only discrete values but in (a) and (b) it will take all positive values.
+
+\[
+\mu = \mu_{0}\left(1 + \sum_{n} B^{(n)} S^{(n)}\right),
+\]
+
+where $\mu_{0}$ is the undisturbed density.
+
+\[
+\ddot{B}^{(n)}\mu_{0} - \tfrac{1}{2}\dot{B}^{(n)}\mu_{0} - B^{(n)}\left(\tfrac{4}{3}\mu_{0}^{2} - \tfrac{n^{2}}{3\Omega^{2}}\mu_{0}\right) = 0.
+\]
+
+As long as $\mu_{0} > \tfrac{n^{2}}{4\Omega^{2}}$, $B^{(n)}$ will grow.  
+
+For $\mu_{0} \gg \tfrac{n^{2}}{4\Omega^{2}}$,
+
+\[
+B^{(n)} \simeq C\,\tau + D\,\tau^{-1}.
+\]
+
+These perturbations grow for as long as light has not had time to 
+travel a significant distance compared to the scale of the perturbation 
+($\sim \tfrac{\Omega}{n}$). Until that time pressure forces cannot act to even out 
+perturbations.
+
+When $\tfrac{n^{2}}{\Omega^{2}} \gg \mu_{0}$,
+
+\[
+\ddot{B}^{(n)} + \dot{B}^{(n)}\frac{\dot{\Omega}}{\Omega} + \tfrac{n^{2}}{3}B^{(n)} = 0,
+\]
+
+\[
+\therefore \quad B^{(n)} \simeq C\,\Omega^{-\tfrac{1}{2}} e^{\pm i \tfrac{n}{\sqrt{3}} t}.
+\]
+
+We obtain sound waves whose amplitude decreases with time.  
+These results confirm those obtained by Lifshitz and Khalatnikov\,(3).
+
+From the foregoing we see that galaxies cannot form as the result 
+of the growth of small perturbations. We may expect that other non–
+gravitational forces will have an effect smaller than pressure equal \section*{7. The Steady-state Universe}
+
+To obtain the steady-state universe we must add extra terms to 
+the energy–momentum tensor. Hoyle and Narlikar\,(10) use,
+
+\[
+T_{ab} = \mu\, u_{a} u_{b} + h_{ab} - C_{a} C_{b} 
++ \tfrac{1}{2} g_{ab} C_{c} C^{d}. \tag{20}
+\]
+
+where,  
+
+\[
+C_{a} = C_{;a}, \qquad 
+C_{;a}{}^{a} = -\dot{j}_{a}{}^{a}, \qquad 
+j_{a} = -(\mu + h) u_{a}.
+\]
+
+Since $T_{ab}{}^{;b} = 0$,
+
+\[
+\dot{\mu} + (\mu + h)\theta + u^{a} C_{\mu} C_{b}{}^{;b} = 0, \tag{21}
+\]
+
+\[
+(\mu + h)\dot{u}_{a} + h^{b}{}_{a} h^{c}{}_{b} 
+- h^{b}{}_{a} C_{b} C_{d}{}^{;d} = 0. \tag{22}
+\]
+
+There is a difficulty here, if we require that the ``$C$'' field
+
+
+should not produce acceleration or, in other words, that the matter 
+created should have the same velocity as the matter already in 
+existence. We must then have
+
+\[
+h^{b}{}_{a} C_{b} = 0. \tag{23}
+\]
+
+However since $C$ is a scalar, this implies that the rotation of the 
+medium is zero. On the other hand if (23) does not hold, the equations 
+are indeterminate (c.f. Raychaudhuri and Bannerjee\,(11)). In order to 
+have a determinate set of equations we will adopt (23) but drop the 
+requirement that $C_{a}$ is the gradient of a scalar. The condition (23) 
+is not very satisfactory but it is difficult to think of one more 
+satisfactory. Hoyle and Narlikar\,(12) seek to avoid this difficulty 
+by taking a particle rather than a fluid picture. However this has a 
+serious drawback since it leads to infinite fields (Hawking\,(13)).
+
+From (17),
+
+\[
+C_{a} = -u_{a}\left[1 - \frac{\dot{\mu}}{\mu + \dot{\mu} + (\mu + h)\theta}\right].
+\]
+
+\[
+\therefore \quad C^{a}{}_{;a} = -(\dot{\mu}+h) - (\mu+h)\theta,
+\]
+
+\[
+= -\theta\left(1 - \frac{\dot{\mu}}{\mu + \dot{\mu} + (\mu + h)\theta}\right)
++ \frac{\dot{\mu}}{\mu + \dot{\mu} + (\mu + h)\theta}.
+\]
+
+
+For $\mu \gg h$
+\[
+(\dot{\mu} + \dot{h}) = \theta \big(1 - (\mu + h)\big),
+\]
+\[
+\therefore \quad (\mu + h) \to 1.
+\]
+
+Thus, small perturbations of density die away. Moreover equation (18) 
+still holds, and therefore rotational perturbations also die away.  
+Equation (19) now becomes
+
+\[
+\dot{\theta} = -\tfrac{1}{3}\theta^{2} - \tfrac{1}{2}(\mu + 3h) + 1,
+\]
+\[
+\therefore \quad \theta \to \sqrt{3\left(\tfrac{1}{2} - h\right)}.
+\]
+
+These results confirm those obtained by Hoyle and Narlikar\,(14). We 
+see therefore that galaxies cannot be formed in the steady-state 
+universe by the growth of small perturbations. However this does not 
+exclude the possibility that there might be a self-perpetuating 
+system of finite perturbations which could produce galaxies.  
+(Sciama\,(15), Roxburgh and Saffman\,(16)).
+
+\section*{8. Gravitational Waves}
+
+We now consider perturbations of the Weyl tensor that do not 
+arise from rotational or density perturbations, that is,
+\[
+E_{ab}{}^{;b} = H_{ab}{}^{;b} = 0
+\]
+
+Multiplying (15) by $u^{c}\nabla_{c}$, and (16) by 
+$h^{a}{}_{(c}\eta_{b)}{}^{rs}u_{r}\nabla_{s}$, 
+we obtain, after a lot of reduction,
+\[
+\ddot{E}_{ab} - \left( E_{cd;e}\, h^{c}{}_{f} h^{d}{}_{g} h^{e}{}_{(a}\, h^{fg}{}_{b)} \right)
++ h^{kl} h_{a}{}^{t} h_{b}{}^{s}\, \tfrac{7}{3}\,\dot{E}_{ab}\,\theta
+\]
+\[
++ E_{ab}\left(\dot{\theta} + \tfrac{4}{3}\theta^{2} + \tfrac{1}{3}(\mu + 3h)\right) 
++ \sigma_{ab}\left(\tfrac{1}{3}\theta(\mu+h) + \tfrac{1}{2}(\dot{\mu}+\dot{h})\right) = 0. \tag{24}
+\]
+
+In empty space with a non-expanding congruence $u^{a}$ this reduces to 
+the usual form of the linearised theory,
+\[
+\square^{*} E_{ab} = 0.
+\]
+
+The second term in (24) is the Laplacian in the hypersurface 
+$\tau = \text{constant}$, acting on $E_{ab}$. We will write $E_{ab}$ as a sum of 
+eigenfunctions of this operator,
+\[
+E_{ab} = \sum A^{(n)} V_{ab}^{(n)},
+\]
+where
+\[
+\dot{V}_{ab}^{(n)} = 0, \qquad
+\left( V_{cd;e}\, h^{c}{}_{f} h^{d}{}_{g} h^{e}{}_{(a} h^{fg}{}_{b)} \right)
+= -\frac{n^{2}}{\Omega^{2}}\, V_{ab}^{(n)},
+\]
+\[
+V_{ab}{}^{;b} = 0, \qquad V_{a}{}^{a} = 0.
+\]
+
+Then
+\[
+\dot{E}_{ab} = \sum \frac{A^{(n)}}{\Omega}\, V_{ab}^{(n)},
+\qquad
+\ddot{E}_{ab} = \sum \left[\frac{\dot{A}^{(n)}}{\Omega^{2}} 
+- \frac{A^{(n)}}{\Omega^{2}}\right] V_{ab}^{(n)}.
+\]
+
+Similarly,
+\[
+\sigma_{ab} = \sum D^{(n)} V_{ab}^{(n)}.
+\]
+
+Then by (19)
+\[
+D'^{(n)} = \Omega A^{(n)} - 2D^{(n)}\frac{\Omega'}{\Omega}.
+\]
+
+Substituting in (24),
+\[
+A''^{(n)} + \frac{6\Omega'}{\Omega} A'^{(n)} + A^{(n)} 
+\left[ n^{2} + 3\frac{\Omega''}{\Omega} + 6\frac{\Omega'^{2}}{\Omega^{2}} 
++ \tfrac{1}{3}(\mu + 3h)\Omega^{2}\right]
++ D^{(n)}\left[\Omega(\mu+h) + \tfrac{1}{2}\Omega^{2}(\dot{\mu}+\dot{h})\right] = 0.
+\]
+
+We may differentiate again and substitute for $D'$.  
+For $n \gg 1$ and $\Omega \gg \tfrac{n^{2}}{h^{2}}$,
+\[
+A^{(n)} \simeq \frac{1}{\Omega^{3/2}} e^{i n t}.
+\]
+
+So the gravitational field $E_{ab}$ decreases as $\Omega^{-1}$ and the 
+``energy'' $\tfrac{1}{2}(E_{ab}E^{ab} + H_{ab}H^{ab})$ as $\Omega^{-6}$.  
+We might expect this as the Bianchi identities may be written, to the 
+linear approximation,
+\[
+\Omega\, g^{ed} \frac{\partial}{\partial x^{e}}
+\left(\Omega^{2} C_{abcd}\right) = J_{abc}.
+\]
+
+Therefore if the interaction with the matter could be neglected 
+$C_{abcd}$ would be proportional to $\Omega$ and $E_{ab}, H_{ab}$ to $\Omega^{-1}$.
+
+In the steady-state universe when $\mu$ and $\theta$ have reached their 
+equilibrium values,
+\[
+R_{ab} = \left(\tfrac{1}{2}\mu + h\right) g_{ab},
+\]
+
+\[
+J_{abc} = R_{c[a;b]} - \tfrac{1}{6} g_{c[a}R_{;b]} = 0.
+\]
+Thus the interaction of the ``$C$'' field with gravitational radiation is 
+equal and opposite to that of the matter. There is then no net 
+interaction, and $E_{ab}$ and $H_{ab}$ decrease as $\Omega^{-1}$.
+
+The ``energy'' $\tfrac{1}{2}(E_{ab}E^{ab} + H_{ab}H^{ab})$ depends on second derivatives 
+of the metric. It is therefore proportional to the frequency squared 
+times the energy as measured by the energy momentum pseudo-tensor, in 
+a local co-moving Cartesian coordinate system, which depends only on 
+first derivatives. Since the frequency will be inversely proportional 
+to $\Omega$, the energy measured by the pseudo-tensor will be proportional 
+to $\Omega^{-4}$ as for other rest mass zero fields.
+
+\section*{9. Absorption of Gravitational Waves}
+
+As we have seen, gravitational waves are not absorbed by a 
+perfect fluid. Suppose however there is a small amount of viscosity.  
+We may represent this by the addition of a term $\lambda\sigma_{ab}$ to the 
+energy–momentum tensor, where $\lambda$ is the coefficient of viscosity 
+(Ehlers\,(17)).
+
+Since
+\[
+T_{ab}{}^{;b} = 0
+\]
+we have
+\[
+\dot{\mu} + (\mu+h)\theta - 2\lambda\sigma^{2} = 0, \tag{25}
+\]
+\[
+(\mu+h)\dot{u}_{a} + h^{b}{}_{a}\mu_{,b} + \lambda\sigma_{cb}{}^{;b}h^{c}{}_{a} = 0. \tag{26}
+\]
+Equations (15) (16) become
+\[
+\dot{E}_{ab} + E_{c(a}\theta + h^{c}{}_{(a}\eta_{b)de}u^{c} H_{f}{}^{d;e}
+= -\tfrac{1}{2}(\mu + h)\sigma_{ab}
+- \tfrac{1}{2}\lambda\left(E_{ab} - \tfrac{1}{3}\sigma_{ab}\theta\right), \tag{27}
+\]
+
+\[
+\dot{H}_{ab} + H_{c(a}\theta - h^{c}{}_{(a}\eta_{b)de}u^{c} E_{f}{}^{d;e}
+= -\tfrac{1}{2}\lambda H_{ab}. \tag{28}
+\]
+
+The extra terms on the right of equations (27), (28) are similar to 
+conduction terms in Maxwell’s equations and will cause the wave to 
+decrease by a factor $e^{-\tfrac{1}{2}\lambda t}$. Neglecting expansion for the moment, 
+suppose we have a wave of the form,
+\[
+E_{ab} = E^{0}_{ab} e^{i\nu\tau}.
+\]
+
+This will be absorbed in a characteristic time $2/\lambda$ independent of 
+frequency. By (25) the rate of gain of rest mass energy of the 
+matter will be $2\lambda\sigma^{2}$ which by (19) will be $2\lambda E^{2}\nu^{-2}$. 
+Thus the available energy in the wave is $4 E^{2}\nu^{2}$. This confirms that the 
+density of available energy of gravitational radiation will decrease 
+as $\Omega^{-4}$ in an expanding universe. From this we see that 
+gravitational radiation behaves in much the same way as other 
+radiation fields. In the early stages of an evolutionary universe 
+when the temperature was very high we might expect an equilibrium to 
+be set up between black-body electromagnetic radiation and black-body 
+gravitational radiation. Since they both have two polarisations their energy densities should be equal. As the universe expanded they would 
+both cool adiabatically at the same rate. As we know the temperature 
+of black-body extragalactic electromagnetic radiation is less than 
+$5^\circ$K, the temperature of the black-body gravitational radiation must 
+be also less than this which would be absolutely undetectable. Now 
+the energy of gravitational radiation does not contribute to the 
+ordinary energy–momentum tensor $T_{ab}$. Nevertheless it will have an 
+active gravitational effect. By the expansion equation,
+\[
+\dot{\theta} = -\tfrac{1}{3}\theta^{2} - 2\sigma^{2} - \tfrac{1}{2}(\mu + 3h).
+\]
+
+For incoherent gravitational radiation at frequency $\nu$,
+\[
+\sigma^{2} = \alpha E^{2}\nu^{-2}.
+\]
+
+But the energy density of the radiation is
+\[
+4\,E^{2}\nu^{-2}.
+\]
+
+\[
+\therefore \quad \dot{\theta} = -\tfrac{1}{3}\theta^{2} - \tfrac{1}{2}\mu_{G} - \tfrac{1}{2}(\mu + 3h),
+\]
+where $\mu_{G}$ is the gravitational ``energy'' density. Thus gravitational 
+radiation has an active attractive gravitational effect. It is 
+interesting that this seems to be just half that of electromagnetic 
+radiation.
+
+It has been suggested by Hogarth\,(18) and Hoyle and Narlikar\,(10), 
+that there may be a connection between the absorption of radiation 
+and the Arrow of Time. Thus in universes like the steady-state, in 
+which all electromagnetic radiation emitted is eventually absorbed by 
+other matter, the Absorber theory would predict retarded solutions of the Maxwell equations while in evolutionary universes in which 
+electromagnetic radiation is not completely absorbed it would predict 
+advanced solutions. Similarly, if one accepted this theory, one would 
+expect retarded solutions of the Einstein equations if and only if all 
+gravitational radiation emitted is eventually absorbed by other matter. 
+Clearly this is so for the steady–state universe since $\lambda$ will be 
+constant. In evolutionary universes $\lambda$ will be a function of time.  
+We will obtain complete absorption if $\int \lambda d\tau$ diverges. Now for a gas, 
+$\lambda \propto T^{2}$ where $T$ is the temperature. For a monatomic gas, $T \propto \Omega^{-2}$, 
+therefore the integral will diverge (just). However the expression 
+used for viscosity assumed that the mean free path of the atoms was 
+small compared to the scale of the disturbance. Since the mean free 
+path $\propto \mu^{-1}\kappa \Omega^{-3}$ and the wavelength $\propto \Omega^{-1}$, the mean free path will 
+eventually be greater than the wavelength and so the effective viscosity 
+will decrease more rapidly than $\Omega^{-1}$. Thus there will not be complete 
+absorption and the theory would not predict retarded solutions.  
+
+However this is slightly academic since gravitational radiation has not 
+yet been detected, let alone investigated to see whether it corresponds 
+to a retarded or advanced solution.
+
+\section*{References}
+
+\begin{enumerate}
+\item Bonnor W.B.; M.N., \textbf{117}, 104 (1957).
+\item Lifshitz E.M.; J.Phys. U.S.S.R., \textbf{10}, 116 (1946).
+\item Lifshitz E.M., Khalatnikov I.N.; Adv. in Phys., \textbf{12}, 185 (1963).
+\item Irvine W.; Annals of Physics, \textbf{32}, 322 (1965).
+\item Jordan P., Ehlers J., Kundt W.; Ahb.Akad.Wiss. Mainz., No.7 (1960).
+\item Kundt W., Trümper M.; Ahb.Akad.Wiss. Mainz., No.12 (1962).
+\item Trümper M.; Contributions to Actual Problems in Gen.Rel.
+\item Rindler W.; M.N., \textbf{116}, 662 (1956).
+\item Penrose R.; Article in `Relativity Topology and Groups’, Gordon and Breach (1964).
+\item Hoyle F., Narlikar J.V.; Proc.Roy.Soc., A, \textbf{277}, 1 (1964).
+\item Raychaudhuri A., Banerjee S.; Z.Astrophys., \textbf{58}, 187 (1964).
+\item Hoyle F., Narlikar J.V.; Proc.Roy.Soc., A, \textbf{282}, 184 (1964).
+\item Hawking S.W.; Proc.Roy.Soc., A, \textbf{286}, 313 (1965).
+\item Hoyle F., Narlikar J.V.; Proc.Roy.Soc., A, \textbf{273}, 1 (1963).
+\item Sciama D.W.; M.N., \textbf{115}, 3 (1955).
+\item Roxburgh I.W., Sattman P.G.; M.N., \textbf{129}, 181 (1965).
+\item Ehlers J.; Ahb.Akad.Wiss. Mainz. Noll. (1961).
+\item Hogarth J.E.; Proc.Roy.Soc., A, \textbf{267}, 365 (1962).
+\end{enumerate}
+
+
+
+

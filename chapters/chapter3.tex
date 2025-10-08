@@ -1,0 +1,628 @@
+Gravitational radiation in empty asymptotically flat 
+space has been examined by means of asymptotic expansions 
+by a number of authors.\,(1--4) They find that the different 
+components of the outgoing radiation field ``peel off'', that 
+is, they go as different powers of the affine radial distance.  
+If one wishes to investigate how this behaviour is modified 
+by the presence of matter, one is faced with a difficulty 
+that does not arise in the case of, say, electromagnetic 
+radiation in matter. For this one can consider the radiation 
+travelling through an infinite uniform medium that is static 
+apart from the disturbance created by the radiation. In the 
+case of gravitational radiation this is not possible. For, 
+if the medium were initially static, its own self–gravitation 
+would cause it to contract in on itself and it would cease to 
+be static. Hence one is forced to investigate gravitational 
+radiation in matter that is either contracting or expanding.  
+
+As in Chapter 2, we identify the Weyl or conformal 
+tensor $C_{abcd}$ with the free gravitational field and the 
+Ricci–tensor $R_{ab}$ with the contribution of the matter to the 
+curvature. Instead of considering gravitational radiation in asymptotically flat space, that is, space that approaches 
+flat space at large radial distances, we consider it in 
+asymptotically conformally flat space. As it is only 
+conformally flat, the Ricci–tensor and the density of matter 
+need not be zero.  
+
+To avoid essentially non–gravitational phenomena such 
+as sound waves, we will consider gravitational radiation 
+travelling through dust. It was shown in Chapter 2 that a 
+conformally flat universe filled with dust must have one of 
+the metrics:  
+
+(a) 
+\[
+ds^{2} = -\Omega^{2}\left(d\iota^{2} - d\varrho^{2} - \sin^{2}\varrho \left(d\theta^{2} + \sin^{2}\theta\, d\phi^{2}\right)\right),
+\qquad \Omega = A(1 - \cos \tau) \tag{1.1}
+\]
+
+(b) 
+\[
+ds^{2} = \Omega^{2}\left(dt^{2} - d\varrho^{2} - \varrho^{2}\left(d\theta^{2} + \sin^{2}\theta\, d\phi^{2}\right)\right),
+\qquad \Omega = \tfrac{1}{6}A t^{2} \tag{1.2}
+\]
+
+(c) 
+\[
+ds^{2} = \Omega^{2}\left(dt^{2} - d\varrho^{2} - \sinh^{2}\varrho\left(d\theta^{2} + \sin^{2}\theta\, d\phi^{2}\right)\right),
+\qquad \Omega = A(\cosh t - 1) \tag{1.3}
+\]
+
+Type (a) represents a universe in which the matter 
+expands from the initial singularity with insufficient energy 
+to reach infinity and so falls back again to another 
+singularity. It is therefore unsuitable for a discussion of gravitational radiation by a method of asymptotic expansions 
+since one cannot get an infinite distance from the source.  
+
+Type (b) is the Einstein–de Sitter universe in which the 
+matter has just sufficient energy to reach infinity. It is 
+thus a special case. D. Norman\,(5) has investigated the 
+``peeling off'' behaviour in this case using Penrose’s conformal 
+technique\,(6). He was however forced to make certain assumptions 
+about the movement of the matter which will be shown to 
+be false. Moreover, he was misled by the special nature of 
+the Einstein–de Sitter universe in which affine and luminosity 
+distances differ. Another reason for not considering radiation 
+in the Einstein–de Sitter universe is that it is unstable.  
+The passage of a gravitational wave will cause it to contract 
+again eventually and develop a singularity.  
+
+We will therefore consider radiation in a universe of 
+type (c) which corresponds to the general case where the 
+matter is expanding with more than enough energy to avoid 
+contracting again.  
+
+\section*{2. The Newman–Penrose Formalism}
+
+We employ the notation of Newman and Penrose.\,(3) A 
+tetrad of null vectors, $l^{\mu}, n^{\mu}, m^{\mu}, \bar{m}^{\mu}$ is introduced
+where:
+\[
+l_{\mu}l^{\mu} = n_{\mu}n^{\mu} = m_{\mu}m^{\mu} = \bar{m}_{\mu}\bar{m}^{\mu} =
+l_{\mu}m^{\mu} = l_{\mu}\bar{m}^{\mu} = n_{\mu}m^{\mu} = n_{\mu}\bar{m}^{\mu} = 0,
+\]
+\[
+l_{\mu}n^{\mu} = 1, \qquad m_{\mu}\bar{m}^{\mu} = -1.
+\]
+
+We label these vectors with a tetrad index
+\[
+Z^{\mu}_{a} = (l^{\mu}, n^{\mu}, m^{\mu}, \bar{m}^{\mu}), \qquad a = 1,2,3,4.
+\]
+
+Tetrad indices are raised and lowered with the metric
+\[
+\eta_{ab} =
+\begin{bmatrix}
+0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 \\
+0 & 0 & 0 & -1 \\
+0 & 0 & -1 & 0
+\end{bmatrix}. \tag{2.1}
+\]
+
+We have,
+\[
+g^{\mu\nu} = \eta^{ab} Z^{\mu}_{a} Z^{\nu}_{b}
+= l^{\mu}n^{\nu} + n^{\mu}l^{\nu} - m^{\mu}\bar{m}^{\nu} - \bar{m}^{\mu}m^{\nu}. \tag{2.2}
+\]
+
+Ricci rotation coefficients are defined by:
+\[
+\gamma_{abc} = Z^{\mu}_{a;\nu} Z^{\nu}_{b} Z_{c\mu}, \tag{2.3}
+\]
+\[
+\gamma_{abc} = -\gamma_{acb}.
+\]
+In fact it is more convenient to work in terms of twelve 
+complex combinations of rotation coefficients defined as follows:
+
+\[
+\kappa = \gamma_{131} = l_{\mu;\nu} m^{\mu} l^{\nu},
+\]
+\[
+\pi = -\gamma_{241} = -n_{\mu;\nu} \bar{m}^{\mu} l^{\nu},
+\]
+\[
+\epsilon = \tfrac{1}{2}(\gamma_{121} + \gamma_{341})
+= \tfrac{1}{2}(l_{\mu;\nu} n^{\mu} l^{\nu} - m_{\mu;\nu} \bar{m}^{\mu} l^{\nu}),
+\]
+\[
+\rho = \gamma_{134} = l_{\mu;\nu} m^{\mu} \bar{m}^{\nu},
+\]
+\[
+\lambda = -\gamma_{244} = -n_{\mu;\nu} \bar{m}^{\mu} \bar{m}^{\nu},
+\]
+\[
+\alpha = \tfrac{1}{2}(\gamma_{124} - \gamma_{344})
+= \tfrac{1}{2}(l_{\mu;\nu} n^{\mu} \bar{m}^{\nu} - m_{\mu;\nu} \bar{m}^{\mu} \bar{m}^{\nu}),
+\]
+\[
+\beta = \tfrac{1}{2}(\gamma_{123} - \gamma_{343})
+= \tfrac{1}{2}(l_{\mu;\nu} n^{\mu} m^{\nu} - m_{\mu;\nu} \bar{m}^{\mu} m^{\nu}),
+\]
+\[
+\sigma = \gamma_{133} = l_{\mu;\nu} m^{\mu} m^{\nu},
+\]
+\[
+\mu = -\gamma_{243} = -n_{\mu;\nu} \bar{m}^{\mu} m^{\nu},
+\]
+\[
+\nu = -\gamma_{242} = -n_{\mu;\nu} n^{\mu} \bar{m}^{\nu},
+\]
+\[
+\gamma = \tfrac{1}{2}(\gamma_{122} - \gamma_{342})
+= \tfrac{1}{2}(l_{\mu;\nu} n^{\mu} n^{\nu} - m_{\mu;\nu} \bar{m}^{\mu} n^{\nu}),
+\]
+\[
+\tau = \gamma_{132} = l_{\mu;\nu} m^{\mu} n^{\nu}. \tag{2.4}
+\]
+\section*{3. Coordinates}
+
+Like Newman and Penrose, we introduce a null coordinate 
+\[
+u (= X^{1}), \qquad g^{\mu\nu} u_{,\mu} u_{,\nu} = 0. \tag{3.1}
+\]
+
+We take 
+\[
+l_{\mu} = u_{,\mu}.
+\]
+Thus $l_{\mu}$ will be geodesic and irrotational. This implies
+\[
+\kappa = 0, \quad \rho = \bar{\rho}, \quad 
+\epsilon = \bar{\epsilon}, \quad \alpha + \bar{\beta} = 0. \tag{3.2}
+\]
+
+We take $n^{\mu}, m^{\mu}, \bar{m}^{\mu}$ to be parallely transported 
+along $l^{\mu}$. This gives
+\[
+\pi = \epsilon = 0. \tag{3.3}
+\]
+
+As a second coordinate we take an affine parameter $\gamma(=X^{2})$ 
+along the geodesics $l^{\mu}$,
+\[
+\gamma_{,\mu} l^{\mu} = 1. \tag{3.4}
+\]
+
+$X^{3}$ and $X^{4}$ are two coordinates that label the geodesic 
+in the surface $u=\text{const}$.  
+
+\[
+g^{\mu\nu} X^{i}{}_{,\mu} u_{,\nu} = X^{i}{}_{,\mu} l^{\mu} = 0. \tag{3.5}
+\]
+
+Thus,
+\[
+g^{\mu\nu} =
+\begin{bmatrix}
+0 & 1 & 0 & 0 \\
+1 & 0 & g^{23} & g^{24} \\
+0 & g^{23} & g^{33} & g^{34} \\
+0 & g^{24} & g^{34} & g^{44}
+\end{bmatrix}. \tag{3.6}
+\]
+
+In these coordinates
+\[
+l_{\mu} = \delta^{1}{}_{\mu}, \qquad l^{\mu} = \delta^{\mu}{}_{2},
+\]
+since $l_{\mu} l^{\mu} = 0$, $l_{\mu} m^{\mu} = 0$,  
+
+\[
+m^{\mu} = \cos\theta\, \delta^{\mu}{}_{3} + \sin\theta\, \delta^{\mu}{}_{4},
+\]
+
+\[
+n^{\mu} = \delta^{\mu}{}_{1} + U \delta^{\mu}{}_{2} + X^{i} \delta^{\mu}{}_{i}, 
+\qquad i=3,4. \tag{3.7}
+\]
+\section*{The Field Equations}
+
+We may calculate the Ricci and Weyl tensor components from 
+the relations
+\[
+R_{abcd} - R_{abdc} = \gamma_{ab[c;d]} - \gamma_{ab[d;c]}
++ \gamma_{aeb}\gamma^{e}{}_{cd} - \gamma_{aed}\gamma^{e}{}_{bc}, \tag{3.8}
+\]
+
+\[
+R_{abcd} = C_{abcd} + \eta_{a[c}R_{d]b} + \eta_{b[d}R_{c]a}
++ \tfrac{R}{3}\eta_{a[c}\eta_{d]b}. \tag{3.9}
+\]
+
+Using the combinations of rotation coefficients already 
+defined and with $\kappa = \pi = \epsilon = 0$, we have
+
+\[
+D\rho = \rho^{2} + \sigma \bar{\sigma} + \Phi_{00}, \tag{3.10}
+\]
+\[
+D\sigma = 2\rho\sigma + \Psi_{0}, \tag{3.11}
+\]
+\[
+D\tau = \rho\tau + \bar{\sigma}\pi + \Psi_{1} + \Phi_{01}, \tag{3.12}
+\]
+\[
+D\alpha = \rho\alpha + \beta\bar{\sigma} + \Phi_{10}, \tag{3.13}
+\]
+\[
+D\beta = \rho\beta + \alpha\sigma + \Psi_{1}, \tag{3.14}
+\]
+\[
+D\gamma = \tau\alpha + \bar{\tau}\beta - \Psi_{2} - \Lambda + \Phi_{11}, \tag{3.15}
+\]
+\[
+D\lambda = \rho\lambda + \mu\bar{\sigma} + \Phi_{20}, \tag{3.16}
+\]
+\[
+D\mu = \rho\mu + \sigma\lambda + \Psi_{2} + 2\Lambda, \tag{3.17}
+\]
+\[
+D\nu = \tau\lambda + \bar{\tau}\mu + \Psi_{3} + \Phi_{21}. \tag{3.18}
+\]
+\[
+\Delta \nu - \bar{\delta}\gamma = 2\alpha \nu + (\bar{\gamma} - 3\gamma - \mu - \bar{\mu})\lambda - \Psi_{4}, \tag{3.19}
+\]
+
+\[
+\delta \rho - \bar{\delta}\sigma = (\bar{\beta} + \alpha)\rho + (\bar{\beta} - 3\alpha)\sigma - \Psi_{1} + \Phi_{01}, \tag{3.20}
+\]
+
+\[
+\delta \alpha - \bar{\delta}\beta = \mu\rho - \lambda\sigma - 2\alpha\beta + \alpha\bar{\alpha} + \beta\bar{\beta} - \Psi_{2} + \Lambda + \Phi_{11}, \tag{3.21}
+\]
+
+\[
+\delta \lambda - \bar{\delta}\mu = (\alpha + \bar{\beta})\mu + (\bar{\alpha} - 3\beta)\lambda - \Psi_{3} + \Phi_{21}, \tag{3.22}
+\]
+
+\[
+\delta \nu - \Delta \mu = \gamma\mu - 2\beta\tau + \bar{\gamma}\pi + \mu^{2} + \lambda\bar{\lambda} + \Phi_{22}, \tag{3.23}
+\]
+
+\[
+\delta \gamma - \Delta \beta = \gamma\mu - \sigma\nu - (\mu - \gamma - \bar{\gamma})\beta + \lambda\alpha + \Phi_{12}, \tag{3.24}
+\]
+
+\[
+\delta \tau - \Delta \sigma = 2\beta\tau + (\bar{\gamma} + \mu - 3\gamma)\sigma - \bar{\lambda}\rho + \Phi_{02}, \tag{3.25}
+\]
+
+\[
+\Delta \rho - \bar{\delta}\tau = (\gamma + \bar{\gamma} - \bar{\mu})\rho - 2\alpha\tau - \lambda\sigma - \Psi_{2} - 2\Lambda, \tag{3.26}
+\]
+
+\[
+\Delta \alpha - \delta \gamma = \rho\nu - \tau\lambda - \lambda\beta + (\bar{\gamma} - \gamma - \bar{\mu})\alpha - \Psi_{3}. \tag{3.27}
+\]
+\begin{align}
+D &= L^{\mu} \nabla_{\mu} = \frac{\partial}{\partial r} \tag{3.28} \\[6pt]
+\Delta &= N^{\mu} \nabla_{\mu} = V \frac{\partial}{\partial r} 
+   + \frac{\partial}{\partial u} + X^{i}\frac{\partial}{\partial x^{i}} \tag{3.29} \\[6pt]
+\delta &= M^{\mu} \nabla_{\mu} = W \frac{\partial}{\partial r} 
+   + \xi^{i}\frac{\partial}{\partial x^{i}} \tag{3.30} \\[6pt]
+\Phi_{00} &= -\tfrac{1}{2} R_{11} = \overline{\Phi}_{00} \tag{3.31} \\[6pt]
+\Phi_{11} &= -\tfrac{1}{4}(R_{12} + R_{34}) = \overline{\Phi}_{11} \tag{3.32} \\[6pt]
+\Phi_{01} &= -\tfrac{1}{2} R_{13} = \overline{\Phi}_{10} \tag{3.33} \\[6pt]
+\Phi_{12} &= -\tfrac{1}{2} R_{23} = \overline{\Phi}_{21} \tag{3.34} \\[6pt]
+\Phi_{02} &= -\tfrac{1}{2} R_{33} = \overline{\Phi}_{20} \tag{3.35} \\[6pt]
+\Phi_{22} &= -\tfrac{1}{2} R_{22} = \overline{\Phi}_{22} \tag{3.36} \\[6pt]
+\Lambda &= \tfrac{R}{24} \tag{3.37}
+\end{align}
+
+\begin{align}
+\Psi_{0} &= -C_{1313} 
+= - C_{\alpha \beta \gamma \delta} \, l^{\alpha} m^{\beta} l^{\gamma} m^{\delta} 
+\tag{3.38} \\[10pt]
+%
+\Psi_{1} &= -C_{1213} 
+= - C_{\alpha \beta \gamma \delta} \, l^{\alpha} n^{\beta} l^{\gamma} m^{\delta} 
+\tag{3.39} \\[10pt]
+%
+\Psi_{2} &= -\tfrac{1}{2} \left( C_{1212} + C_{1234} \right) 
+= -\tfrac{1}{2} C_{\alpha \beta \gamma \delta} 
+\left( l^{\alpha} n^{\beta} l^{\gamma} n^{\delta} 
++ l^{\alpha} n^{\beta} m^{\gamma} \bar{m}^{\delta} \right) 
+\tag{3.40} \\[10pt]
+%
+\Psi_{3} &= C_{1224} 
+= C_{\alpha \beta \gamma \delta} \, l^{\alpha} n^{\beta} \bar{m}^{\gamma} n^{\delta} 
+\tag{3.41} \\[10pt]
+%
+\Psi_{4} &= -C_{2424} 
+= - C_{\alpha \beta \gamma \delta} \, n^{\alpha} \bar{m}^{\beta} n^{\gamma} \bar{m}^{\delta} 
+\tag{3.42}
+\end{align}
+
+
+
+
+
+%%%%
+
+Expressing the rotation coefficients in terms of the metric, we have:
+
+\begin{align}
+D \, \xi^{i} &= \rho \, \xi^{i} + \sigma \, \bar{\xi}^{i} 
+\tag{3.43} \\[10pt]
+%
+D \, \omega &= \rho \, \omega + \sigma \, \bar{\omega} - (\alpha + \bar{\beta}) 
+\tag{3.44} \\[10pt]
+%
+D \, \chi &= \tau \, \xi^{i} + \bar{\tau} \, \bar{\xi}^{i} 
+\tag{3.45} \\[10pt]
+%
+D \, U &= \tau \, \omega + \bar{\tau} \, \bar{\omega} - (\gamma + \bar{\gamma}) 
+\tag{3.46} \\[10pt]
+%
+\delta \chi^{i} - \Delta \xi^{i} &= (\mu + \bar{\gamma} - \gamma)\, \xi^{i} + \lambda \, \bar{\xi}^{i} 
+\tag{3.47} \\[10pt]
+%
+\delta \, \bar{\xi}^{i} - \bar{\delta} \, \xi^{i} &= (\bar{\beta} - \alpha)\, \xi^{i} + (\bar{\alpha} - \beta)\, \bar{\xi}^{i} 
+\tag{3.48} \\[10pt]
+%
+\delta \, \bar{\omega} - \bar{\delta} \, \omega &= (\bar{\beta} - \alpha)\, \omega + (\bar{\alpha} - \beta)\, \bar{\omega} + (\mu - \bar{\mu}) 
+\tag{3.49} \\[10pt]
+%
+\delta U - \Delta \omega &= (\mu + \bar{\gamma} - \gamma)\, \omega + \bar{\lambda} \, \bar{\omega} - \nu 
+\tag{3.50}
+\end{align}
+
+
+
+As in Chapter 2 we use the Bianchi identities as field equations for the Weyl tensor.  
+In the Newman–Penrose formalism they may be written:  
+(I am indebted to \textbf{R. G. McLenaghan} for these)
+
+\begin{align}
+\bar{\delta} \Psi_{0} - D \Psi_{1} + D \Phi_{01} - \delta \Phi_{00} 
+&= (\pi - 4 \alpha) \Psi_{0} - 2 (2 \tau + \beta) \Phi_{00} \notag \\
+& \quad + 2 \rho \Phi_{01} - 2 \delta \Phi_{10}
+\tag{3.51} \\[12pt]
+%
+\Delta \Psi_{0} - \delta \Psi_{1} + D \Phi_{02} - \delta \Phi_{01} 
+&= (4 \gamma - \mu) \Psi_{0} - 2 (2 \tau + \beta) \Psi_{1} \notag \\
+& \quad + 3 \sigma \Psi_{2} - \lambda \Phi_{00} - 2 \beta \Phi_{01} + 2 \delta \Phi_{11} - \gamma \Phi_{02}
+\tag{3.52} \\[12pt]
+%
+3 (\bar{\delta} \Psi_{1} - D \Psi_{2}) + 2 (D \Phi_{11} - \delta \Phi_{10}) 
+&+ \bar{\delta} \Phi_{01} - \Delta \Phi_{00} \notag \\
+&= 3 \lambda \Psi_{0} - 9 \rho \Psi_{2} + 6 \alpha \Psi_{1} \notag \\
+& \quad + (\mu - 2 \gamma - 2 \bar{\gamma}) \Phi_{00} + (2 \alpha + 2 \bar{\pi}) \Phi_{01} \notag \\
+& \quad + 2 (\tau - 2 \alpha) \Phi_{12} + 2 \rho \Phi_{11} + 2 \delta \Phi_{20} - 6 \Phi_{02}
+\tag{3.53} \\[12pt]
+%
+3 (\Delta \Psi_{1} - \delta \Psi_{2}) + 2 (\Delta \Phi_{01} - \delta \Phi_{11}) 
+&+ (\delta \Phi_{02} - \Delta \Phi_{01}) \notag \\
+&= 3 \nu \Psi_{0} + 6 (\gamma - \mu) \Psi_{1} - 9 \tau \Psi_{2} + 6 \sigma \Psi_{3} \notag \\
+& \quad + 2 (\mu - \bar{\mu} - \gamma) \Phi_{01} - 2 \lambda \Phi_{10} + 2 \nu \Phi_{11} \notag \\
+& \quad + (2 \alpha + \bar{\pi} - 2 \beta) \Phi_{02} + 2 \delta \Phi_{12}
+\tag{3.54} \\[12pt]
+%
+3 (\bar{\delta} \Psi_{2} - D \Psi_{3}) + 2 (D \Phi_{21} - \delta \Phi_{20}) 
+&+ 2 (D \Phi_{11} - \delta \Phi_{21}) \notag \\
+&= 6 \mu \Psi_{1} - 6 \rho \Psi_{3} - 2 \pi \Phi_{02} + 2 (\mu - \bar{\mu} - \gamma) \Phi_{10} \notag \\
+& \quad + 4 \bar{\alpha} \Phi_{11} + (2 \beta - 2 \alpha - 2 \pi) \Phi_{20} - 2 \delta \Phi_{12}
+\tag{3.55}
+\end{align}
+
+\begin{align}
+3(\Delta \Psi_{2} - \delta \Psi_{3}) + (D \Phi_{22} - \delta \Phi_{21}) + 2 (\bar{\delta} \Phi_{12} - \Delta \Phi_{11}) 
+&= 6 \nu \Psi_{2} - 9 \mu \Psi_{2} + 6 (\beta - \tau) \Psi_{3} - 3 \sigma \Psi_{4} \notag \\
+& \quad - 2 \nu \Phi_{01} + 2 \bar{\nu} \Phi_{10} + 2 (\bar{\mu} - \mu) \Phi_{11} + 2 \lambda \Phi_{02} \notag \\
+& \quad - \lambda \Phi_{20} + 2 (\bar{\pi} - 2 \beta) \Phi_{12} + 2 (\beta \tau - \gamma \mu) \Phi_{21} - 6 \Phi_{22}
+\tag{3.56} \\[12pt]
+%
+\bar{\delta} \Psi_{3} - D \Psi_{4} + \bar{\delta} \Phi_{21} - \Delta \Phi_{20} 
+&= 3 \lambda \Psi_{2} - 2 \nu \Psi_{3} - \rho \Psi_{4} \notag \\
+& \quad - 2 \nu \Phi_{01} + 2 \lambda \Phi_{10} + (2 \gamma - 2 \bar{\gamma} - \mu) \Phi_{20} \notag \\
+& \quad + 2 (\bar{\pi} - \alpha) \Phi_{21} - 6 \Phi_{22}
+\tag{3.57} \\[12pt]
+%
+\Delta \Psi_{3} - \delta \Psi_{4} + \bar{\delta} \Phi_{22} - \Delta \Phi_{21} 
+&= 3 \nu \Psi_{2} - 2 (\gamma + 2 \mu) \Psi_{3} + (4 \beta - \tau) \Psi_{4} \notag \\
+& \quad - 2 \nu \Phi_{11} - \bar{\nu} \Phi_{00} + 2 \lambda \Phi_{02} \notag \\
+& \quad + 2 (\gamma + \bar{\mu}) \Phi_{11} + (\bar{\pi} - 2 \beta - 2 \tau) \Phi_{22}
+\tag{3.58} \\[12pt]
+%
+D \Phi_{12} - \delta \Phi_{11} - \bar{\delta} \Phi_{02} + \Delta \Phi_{01} + 3 \Lambda 
+&= (2 \gamma - \mu - 2 \bar{\mu}) \Phi_{01} + \pi \bar{\nu} \Phi_{00} \notag \\
+& \quad - \lambda \Phi_{02} - 2 \pi \Phi_{11} + (2 \beta - 2 \alpha - \bar{\pi}) \Phi_{02} + 3 \rho \Phi_{22} + 6 \Phi_{21}
+\tag{3.59} \\[12pt]
+%
+D \Phi_{10} - \delta \Phi_{01} + \Delta \Phi_{00} + 3 D \Lambda 
+&= (2 \gamma - \mu + 2 \bar{\gamma} - \bar{\mu}) \Phi_{00} - 2 (\alpha + \bar{\pi}) \Phi_{10} \notag \\
+& \quad - 2 (\tau + \alpha) \Phi_{10} + 4 \rho \Phi_{11} + 6 \Phi_{02} - \tau \Phi_{20}
+\tag{3.60} \\[12pt]
+%
+D \Phi_{22} - \delta \Phi_{21} - \bar{\delta} \Phi_{12} + \Delta \Phi_{11} + 3 \Delta \Lambda 
+&= \nu \Phi_{01} + \bar{\nu} \Phi_{10} - 2 (\mu + \bar{\mu}) \Phi_{11} \notag \\
+& \quad - \lambda \Phi_{02} - \bar{\lambda} \Phi_{20} + (2 \bar{\beta} - \tau) \Phi_{12} + (2 \beta - \tau) \Phi_{21} \notag \\
+& \quad + 2 \rho \Phi_{22}
+\tag{3.61}
+\end{align}
+
+\section*{4. The Undisturbed Metric}
+
+The undisturbed metric may be written
+\[
+ds^{2} = \Omega^{2} \left( dt^{2} - d\rho^{2} - \sinh^{2} \rho \, ( d\theta^{2} + \sin^{2}\theta \, d\phi^{2} ) \right)
+\]
+where
+\[
+\Omega = A(\cosh t - 1).
+\]
+
+Put
+\[
+u = t - \rho,
+\]
+then
+\[
+ds^{2} = \Omega^{2} \left[ -du^{2} + 2 \, du \, dt - \sinh^{2}(t-u)\,(d\theta^{2} + \sin^{2}\theta \, d\phi^{2}) \right]
+\tag{4.1}
+\]
+
+$u$ is a null coordinate.  
+
+To calculate $r$, the affine parameter, we note that $t$ is an affine parameter for the metric within the square brackets.  
+Therefore
+\[
+r = \int \Omega^{2} \, dt = B(u,\theta,\phi)
+\tag{4.2}
+\]
+will be an affine parameter for (4.1).  
+
+$B$ is constant along the null geodesic. Normally it would be taken so that $r=0$ when $t=u$.  
+However, in our case it will be more convenient to make it zero and define $r$ as
+\[
+r = \int_{0}^{t} \Omega^{2} \, dt'
+\tag{4.3}
+\]
+
+This means that surfaces of constant $r$ are surfaces of constant $t$.  
+This may seem rather odd, but it should be pointed out that the choice of $B$ will not affect the asymptotic dependence of quantities.  
+That is, if
+\[
+f = O(r^{-n})
+\]
+then
+\[
+f = O(r'^{-n}), \qquad r' = r + B.
+\]
+
+
+It proves easier to perform the calculations with this choice of $r$  
+but all results could be transformed back to a more normal coordinate system.  
+
+From (4.3)
+\[
+r = A^{2} \left[ \tfrac{1}{4} \sinh 2t - 2 \sinh t + \tfrac{3}{2} t \right]
+\tag{4.4}
+\]
+
+The matter in the universe is assumed to be dust so its energy tensor may be written
+\[
+T_{ab} = \mu \, V_{a} V_{b}
+\tag{4.5}
+\]
+
+For the undisturbed case, from Chapter 2
+\[
+\mu = \frac{6A}{\Omega^{3}}
+\tag{4.6}
+\]
+\[
+V_{a} = \Omega \, t_{;a}, 
+\qquad 
+V_{a} V^{a} = 1
+\]
+
+Now
+\[
+\Omega = \sqrt{2s} + A - \frac{3A^{2}}{2\sqrt{2}} \, \frac{\log s}{s} + O(s^{-1})
+\tag{4.7}
+\]
+where
+\[
+s^{2} = r.
+\]
+
+Therefore if we try to expand $\mu$ as a series in powers of $s$  
+the result will be very messy and will involve terms of the form
+\[
+\frac{\log^{n} s}{s^{n}} x^{(*)} 
+\]
+
+\bigskip
+\noindent\rule{\linewidth}{0.4pt}  
+
+\textit{* It should be pointed out that the expansions used will only be assumed to be valid asymptotically. They will not be assumed to converge at finite distances nor will the quantities concerned be assumed analytic. (see A. Erdelyi: \textit{Asymptotic Expansions} – Dover)}  \\
+\bigskip
+\noindent\rule{\linewidth}{0.4pt}  
+
+This does not invalidate it as an asymptotic expansion but it makes it tedious to handle.  
+For convenience therefore, we will perform the expansions in terms of $\Omega(r)$ which will be defined in general as the same function of $r$ as it is in the undisturbed case.  
+That is
+\[
+\Omega = A(\cosh t - 1),
+\qquad
+r = A^{2} \left[ \tfrac{1}{4} \sinh 2t - 2 \sinh t + \tfrac{3}{2} t \right]
+\tag{4.8}
+\]
+then
+\[
+\frac{d\Omega}{d r} = \frac{\sqrt{1 + \tfrac{3}{2}A}}{\Omega}
+= \frac{1}{\Omega} \left[ 1 + \frac{A}{\Omega} - \frac{A^{2}}{2 \Omega^{2}} + \frac{A^{3}}{2 \Omega^{3}} - \frac{5A^{4}}{8 \Omega^{4}} + \frac{7A^{5}}{8 \Omega^{5}} - \cdots \right]
+\tag{4.9}
+\]
+
+For the third and fourth coordinates it is more convenient to use stereographic coordinates than spherical polars.  
+
+Since the matter is dust its energy–momentum tensor and hence the Ricci tensor have only four independent components.  
+We will take these as $\Lambda, \, \Phi_{00}, \, \Phi_{01}$ (since $\Phi_{01}$ is complex it represents two components).  
+
+In terms of these the other components of the Ricci tensor may be expressed as:
+\[
+\Phi_{11} = 3 \Lambda + \frac{\Phi_{01} \bar{\Phi}_{01}}{\Phi_{00}}
+\]
+\[
+\Phi_{22} = \frac{3}{\Phi_{00}} \Lambda^{2} \left( 1 + \frac{\Phi_{01} \bar{\Phi}_{01}}{6 \Lambda \Phi_{00}} \right)^{2}
+\]
+
+\[
+\Phi_{12} = \bar{\Phi}_{21} = \frac{6 \Lambda \Phi_{01}}{\Phi_{00}} 
+\left( 1 + \frac{\Phi_{01} \bar{\Phi}_{01}}{6 \Lambda \Phi_{00}} \right)^{2}
+\]
+
+\[
+\Phi_{02} = \bar{\Phi}_{20} = \frac{\Phi_{01}^{2}}{\Phi_{00}}
+\tag{4.10}
+\]
+
+---
+
+For the undisturbed universe with the coordinate system given:
+
+\[
+\Lambda = \frac{\mu}{24} = \frac{A}{4 \Omega^{3}}
+\]
+
+\[
+\Phi_{00} = \frac{3A}{\Omega^{5}}, 
+\qquad 
+\Phi_{11} = \frac{3A}{4 \Omega^{3}}, 
+\qquad 
+\Phi_{22} = \frac{3A}{\Omega}
+\]
+
+\[
+\Phi_{01} = \Phi_{02} = 0
+\tag{4.11}
+\]
+
+---
+
+Using these values and the fact that in the undisturbed universe all the $\Psi^{(n)}$ are zero,  
+we may integrate equations (3.10–50) to find the values of the spin coefficients for the unperturbed universe:
+
+\[
+\rho = -\frac{2}{\Omega^{2}} - \frac{A}{\Omega^{3}} 
++ \left( \frac{A^{2}}{2} - \frac{A^{2}}{2} e^{2u} \right) \Omega^{-4}
++ A^{3} (u - e^{2u}) \Omega^{-5} 
++ A^{4} \left( \tfrac{5}{8} - \tfrac{1}{4}u - \tfrac{1}{8} e^{4u} \right) \Omega^{-6} + \cdots
+\]
+
+\[
+\epsilon = \pi = \kappa = \nu = \lambda = \chi = 0
+\]
+
+\[
+\xi^{2} = \frac{S e^{iu} - A S e^{iu}}{\Omega^{2}} 
+= \frac{S e^{iu}}{\Omega^{3}} 
++ \tau A^{4} (5 S A u + S e^{3u}) \Omega^{-4} + \cdots
+\]
+%%%%%seguir por pagina 10 de 0002.pdf
+
