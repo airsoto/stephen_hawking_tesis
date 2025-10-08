@@ -1,0 +1,103 @@
+%========================
+% With my deepest admiration for the figure and work of Stephen Hawking. Version 1.0 – Angel Soto airsoto@googlemail.com
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%========================
+
+\documentclass[12pt,a4paper,oneside]{scrbook}
+
+% --- PAQUETES ---
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{tocbibind}
+\usepackage{csquotes}
+\usepackage{biblatex} % requiere biber
+\addbibresource{references.bib}
+\usepackage[hidelinks]{hyperref}
+% --- CONFIGURACIÓN ---
+\geometry{margin=3cm}
+\onehalfspacing % interlineado 1.5
+\renewcommand{\bibname}{}    % para book o report
+\renewcommand{\refname}{}    % para article
+\addto\captionsspanish{\renewcommand{\contentsname}{List of Contents}}
+\renewcommand*{\chapterformat}{}
+
+\renewcommand*{\chaptermark}[1]{\markboth{#1}{}}
+
+% --- PORTADA ---
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+    
+    {\Large \textbf{PROPERTIES}}\\[0.5cm]
+    {\Large \textbf{OF}}\\[0.5cm]
+    {\Large \textbf{EXPANDING UNIVERSES}}\\[3cm]
+    
+    {\Large S. W. Hawking}\\[1cm]
+    {\large Trinity Hall}\\[4cm]
+    
+    % --- Sello ficticio de biblioteca (opcional, se puede comentar) ---
+    %\includegraphics[width=0.25\textwidth]{figures/cambridge_stamp.png}\\[2cm]
+    
+    {\large Thesis presented for the Degree of Ph.D.}\\[0.3cm]
+    {\large in the University of Cambridge}\\
+    
+\end{titlepage}
+
+% --- PRELIMINARES ---
+\frontmatter
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+% --- CUERPO DE LA TESIS ---
+\mainmatter
+
+
+\chapter{Abstract}
+\input{chapters/abstract}
+
+
+\chapter{Introduction}
+\input{chapters/introduction}
+
+\chapter{ACKNOWLEDGEMENTS}
+\input{chapters/aknow}
+
+\chapter{Chapter 1 \\The Hoyle--Narlikar Theory of Gravitation}
+\input{chapters/chapter1}
+
+
+\chapter{Chapter 2 \\Perturbations}
+\input{chapters/chapter2}
+
+
+
+\chapter{Chapter 3 \\Gravitational Radiation In An
+Expanding Universe }
+\input{chapters/chapter3}
+
+
+
+
+% --- BIBLIOGRAFÍA ---
+\backmatter
+\printbibliography
+
+\end{document}
