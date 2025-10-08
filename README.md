@@ -2,7 +2,7 @@
 
 **Proyecto en desarrollo** para la conversión y anotación en **LaTeX/PDF** de la tesis doctoral de **Sir Stephen Hawking**, titulada *“Properties of Expanding Universes”* (Universidad de Cambridge, 1966).
 
-El objetivo es crear una versión accesible, documentada y navegable del texto original, con herramientas de exploración, anotaciones colaborativas y un visor interactivo en modo oscuro disponible en:
+El objetivo es crear una versión accesible y navegable del texto original, con herramientas de exploración y un visor interactivo disponible en:
 
 🔗 **[Visualizador en línea](https://airsoto.github.io/vet/hawking_thesis.html)**
 
