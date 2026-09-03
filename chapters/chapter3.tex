@@ -72,7 +72,7 @@ type (c) which corresponds to the general case where the
 matter is expanding with more than enough energy to avoid 
 contracting again.  
 
-\section*{2. The Newman–Penrose Formalism}
+\sectiontoc{2. The Newman–Penrose Formalism}
 
 We employ the notation of Newman and Penrose.\,(3) A 
 tetrad of null vectors, $l^{\mu}, n^{\mu}, m^{\mu}, \bar{m}^{\mu}$ is introduced
@@ -157,7 +157,7 @@ complex combinations of rotation coefficients defined as follows:
 \[
 \tau = \gamma_{132} = l_{\mu;\nu} m^{\mu} n^{\nu}. \tag{2.4}
 \]
-\section*{3. Coordinates}
+\sectiontoc{3. Coordinates}
 
 Like Newman and Penrose, we introduce a null coordinate 
 \[
@@ -218,7 +218,7 @@ m^{\mu} = \cos\theta\, \delta^{\mu}{}_{3} + \sin\theta\, \delta^{\mu}{}_{4},
 n^{\mu} = \delta^{\mu}{}_{1} + U \delta^{\mu}{}_{2} + X^{i} \delta^{\mu}{}_{i}, 
 \qquad i=3,4. \tag{3.7}
 \]
-\section*{The Field Equations}
+\sectiontoc{The Field Equations}
 
 We may calculate the Ricci and Weyl tensor components from 
 the relations
@@ -444,7 +444,7 @@ D \Phi_{22} - \delta \Phi_{21} - \bar{\delta} \Phi_{12} + \Delta \Phi_{11} + 3 \
 \tag{3.61}
 \end{align}
 
-\section*{4. The Undisturbed Metric}
+\sectiontoc{4. The Undisturbed Metric}
 
 The undisturbed metric may be written
 \[
@@ -624,5 +624,2508 @@ we may integrate equations (3.10–50) to find the values of the spin coefficien
 = \frac{S e^{iu}}{\Omega^{3}} 
 + \tau A^{4} (5 S A u + S e^{3u}) \Omega^{-4} + \cdots
 \]
-%%%%%seguir por pagina 10 de 0002.pdf
 
+
+
+\begin{align}
+\alpha
+&= -\bar{\beta}
+ = \frac{i}{2}\frac{\bar{V}\bar{S}e^{i\alpha}}{\Omega^{2}}
+ = \frac{i}{2}\frac{A\bar{V}\bar{S}e^{i\alpha}}{\Omega^{2}}
+ + \cdots
+\\[4pt]
+\mu
+&= \frac{A}{2\Omega}
+ - \frac{\Omega^{2}}{4}\left(1+e^{2u}\right)\Omega^{-2}
+ + \frac{\Omega^{3}}{4}\left(1+2e^{2u}\right)\Omega^{-3}
+ + \cdots
+\\[4pt]
+\gamma
+&= -\frac{1}{2}
+ - \frac{A}{2\Omega}
+ + \frac{A^{2}}{4\Omega^{2}}
+ - \frac{A^{3}}{4\Omega^{3}}
+ + \cdots
+\\[4pt]
+U
+&= \frac{i}{2}\Omega^{2}
+\tag{4.12}
+\end{align}
+
+\section{Boundary Conditions}
+
+We wish to consider radiation in a universe that
+asymptotically approaches the undisturbed universe given
+above. $\phi_{00}$ and $\Lambda$ will then have the values
+given above plus terms of smaller order. To determine this
+order and the order of $\phi_{01}$ and $\gamma_0$, there are two
+ways in which we may proceed. We may take the smallest orders
+that will permit radiation, that is
+\[
+    \psi_4 = O(r^{-1}).
+\]
+
+Larger order terms than these in $\phi_{00}$, $\Lambda$ and
+$\phi_{01}$ turn out to have their $u$ derivatives
+dependent only on themselves and not on the $r^{-1}$ coefficient
+of $\psi_4$, the radiation field. They are thus disturbances
+not produced by the radiation field and will not be considered.
+
+Alternatively we may proceed by a method of successive approximations. We take the undisturbed values of the spin
+coefficients and use them to solve the Bianchi Identities as
+field equations for the conformal tensor using the flat space
+boundary condition that
+\[
+\psi_0 = O(r^{-5}).
+\]
+Then substituting these $\psi$'s in equations (3.10--27) calculate
+the disturbances induced in the spin coefficients and substituting
+these back in the Bianchi Identities, calculate the disturbances in
+the $\psi$'s. Further iteration does not affect the orders
+of the disturbances.
+
+Both these methods indicate that the boundary conditions
+should be:
+\begin{align}
+\Lambda
+    &= \frac{A}{4\Omega^3} + O(\Omega^{-7})
+    \tag{5.1}\\[6pt]
+\phi_{00}
+    &= \frac{3A}{\Omega^5} + O(\Omega^{-9})
+    \tag{5.2}\\[6pt]
+\phi_{01}
+    &= O(\Omega^{-7})
+    \qquad \text{(see next section)}
+    \tag{5.3}\\[6pt]
+\gamma_0
+    &= O(\Omega^{-7})
+    \tag{5.4}
+\end{align}
+
+We also assume ``uniform smoothness'', that is:
+\[
+\frac{\partial}{\partial x^i}
+\frac{\partial}{\partial x^j}
+\cdots
+\frac{\partial}{\partial x^k}
+\Lambda
+=
+O(\Omega^{-7}).
+\]
+
+\[
+\frac{\partial \Lambda}{\partial \Omega}
+=
+-\frac{3A}{4\Omega^4}
++ O(\Omega^{-8}).
+\]
+
+\hfill etc.\ldots/
+
+
+It will be shown that if these boundary conditions
+hold on one hypersurface ($u = \mathrm{const.}$) they will hold on
+succeeding hypersurfaces and that these conditions are the
+most severe to permit radiation.
+
+\section{Integration}
+
+As Newman and Penrose, we begin by integrating the
+equations (3.10 \& 11)
+\begin{align}
+D\rho &= \rho^2 + \sigma\bar{\sigma} + \phi_{00},\\
+D\sigma &= 2\rho\sigma + \psi_0.
+\end{align}
+
+where
+\[
+\phi_{00}
+=
+\frac{3A}{4\sqrt{2}\,r^{3/2}}
++ O(r^{-3})
+\]
+
+\[
+\psi_0
+=
+\frac{\psi_0^{\,0}}
+     {8\sqrt{2}\,r^{7/2}}
++ O(r^{-4}).
+\]
+
+Let
+\[
+P =
+\begin{bmatrix}
+\rho & \sigma\\
+\bar{\sigma} & \rho
+\end{bmatrix},
+\qquad
+\Phi =
+\begin{bmatrix}
+\phi_{00} & \psi_0\\
+\bar{\psi}_0 & \phi_{00}
+\end{bmatrix}.
+\]
+
+
+then
+\begin{equation}
+D P = P^2 + \Phi
+\tag{6.1}
+\end{equation}
+
+let
+\begin{equation}
+P = -(D Y)Y^{-1}
+\tag{6.2}
+\end{equation}
+
+then
+\begin{equation}
+D^2 Y = -\Phi Y
+\tag{6.3}
+\end{equation}
+
+since
+\[
+\int r\Phi\,dr < \infty
+\]
+
+\[
+DY = F + O(1),
+\qquad
+\text{where $F$ is constant}
+\tag{6.4}
+\]
+
+\[
+Y = rF + O(r).
+\]
+
+However
+\[
+\Phi = O(r^{-5/2}).
+\]
+
+therefore
+\begin{equation}
+D^2Y
+=
+-r\Phi F + O(r^{-3/2})
+=
+O(r^{-3/2})
+\tag{6.5}
+\end{equation}
+
+therefore
+\[
+DY = F + O(r^{-1/2})
+\]
+
+\[
+Y = rF + O(r^{1/2}) + E,
+\qquad
+\text{$E$ is constant}
+\]
+
+\begin{equation}
+P
+=
+-r^{-1}I + O(r^{-3/2})
+\tag{6.6}
+\end{equation}
+
+if $F$ is non-singular (The case $F$ singular corresponds to
+asymptotically plane or cylindrical surfaces and will not be
+considered here).
+
+Thus
+\[
+\rho
+=
+-r^{-1} + O(r^{-3/2})
+=
+-2\Omega^{-2} + O(\Omega^{-3}),
+\]
+
+\begin{equation}
+\sigma
+=
+O(r^{-3/2})
+=
+O(\Omega^{-3})
+\tag{6.7}
+\end{equation}
+
+Let
+\begin{equation}
+\rho
+=
+-2\Omega^{-2} + g\Omega^{-3}
+\tag{6.8}
+\end{equation}
+
+\[
+\sigma = h\Omega^{-3},
+\]
+
+where
+\[
+g,h,\ldots = O(1).
+\]
+
+Then using:
+\[
+D
+=
+\frac{\partial}{\partial r}
+=
+-\Omega^{-1}
+\left(
+1 + A\Omega^{-1}
+-\frac{A^2\Omega^2}{2}
++\frac{A^3\Omega^3}{2}
+-\cdots
+\right)
+\frac{\partial}{\partial\Omega}.
+\]
+\[
+\frac{\partial g}{\partial \Omega}
+\left(\Omega + O(1)\right)
+=
+-A-g+O(\Omega^{-1})
+\]
+
+Integrating,
+\[
+g
+=
+\frac{1}{\Omega+O(1)}
+\left[
+a+
+\int
+\frac{
+\left(-A+O(\Omega^{-1})\right)
+\left(\Omega+O(1)\right)
+}{
+\Omega+O(1)
+}
+\,d\Omega
+\right].
+\]
+
+therefore
+\begin{equation}
+g
+=
+-A
++
+O\left(\frac{\log\Omega}{\Omega}\right)
+\tag{6.9}
+\end{equation}
+
+for $h$,
+\[
+\frac{\partial h}{\partial\Omega}
+\left(\Omega+O(1)\right)
+=
+-h+O(\Omega^{-1})
+\]
+
+therefore
+\begin{equation}
+h
+=
+O(\Omega^{-1})
+\tag{6.10}
+\end{equation}
+
+Repeat the process with
+\begin{align}
+\rho &= -2\Omega^{-2} - A\Omega^{-3} + g\Omega^{-4},
+\tag{6.12}\\
+\sigma &= h\Omega^{-4}.
+\end{align}
+
+where
+\[
+g = O(\log\Omega),
+\]
+\[
+h = O(1).
+\]
+
+then
+\[
+\frac{\partial h}{\partial\Omega}
+\left(\Omega + O(1)\right)
+=
+O(\Omega^{-1})
+\]
+
+\begin{equation}
+h
+=
+\sigma^{0}(u,x^{c})
++
+O(\Omega^{-1})
+\tag{6.13}
+\end{equation}
+
+\[
+\frac{\partial g}{\partial\Omega}
+\left(-\Omega + O(1)\right)
+=
+O(\Omega^{-1}\log\Omega)
+\]
+
+\begin{equation}
+g
+=
+\rho^{0}(u,x^{c})
++
+O(\Omega^{-1}\log\Omega)
+\tag{6.14}
+\end{equation}
+
+Unlike Newman and Unti, we cannot make $\rho^{0}$ zero by
+the transformation
+\[
+r' = r - \rho^{0},
+\]
+since this would alter the boundary condition
+\[
+\Lambda
+=
+\frac{A}{4\Omega^{3}}
++
+\frac{\Lambda^{0}}{\Omega^{7}}.
+\]
+
+Continuing the above process we derive:
+\begin{equation}
+\begin{aligned}
+\rho
+={}&
+-2\Omega^{-2}
+-A\Omega^{-3}
++\rho^{0}\Omega^{-4}
++\left(
+\frac{1}{2}A^{2}
+-2A\rho^{0}
+\right)\Omega^{-5}
+\\
+&+
+\left(
+-\frac{5}{4}A^{4}
++4A^{2}\rho^{0}
+-\frac{(\rho^{0})^{2}}{2}
+-\frac{\sigma^{0}\bar{\sigma}^{0}}{2}
+\right)\Omega^{-6}
++O(\Omega^{-7})
+\end{aligned}
+\tag{6.15}
+\end{equation}
+
+\begin{equation}
+\sigma
+=
+\sigma^{0}\Omega^{-4}
+-
+\left(
+2A\sigma^{0}
++
+\psi_{0}^{0}
+\right)\Omega^{-5}
++\cdots
+\tag{6.16}
+\end{equation}
+
+
+
+To determine the asymptotic behaviour of
+$\psi_1$, $\alpha$, $\beta$, $\xi^c$ and $\omega$
+we use the lemma proved by Newman and Penrose:
+
+The $n\times n$ matrix $B$ and the column vector $b$ are
+given functions of $x$ such that:
+\begin{equation}
+B = O(x^{-2}),
+\qquad
+b = O(x^{-2})
+\tag{6.17}
+\end{equation}
+
+The $n\times n$ matrix $A$ is independent of $x$ and has no
+eigenvalue with positive real part. Any eigenvalue with
+vanishing real part is regular. Then all solutions of:
+\begin{equation}
+\frac{\partial}{\partial x}y
+=
+\left(Ax^{-1}+B\right)y+b
+\tag{6.18}
+\end{equation}
+are bounded as $x\rightarrow\infty$. $y$ is a column
+vector.
+
+For reasons to be explained below, we will assume for
+the moment that
+\[
+\phi_{01}=O(\Omega^{-5}),
+\]
+
+\[
+\frac{\partial}{\partial\Omega}\phi_{01}
+=
+O(\Omega^{-6}),
+\tag{6.19}
+\]
+
+\[
+\frac{\partial}{\partial x^c}
+\frac{\partial}{\partial x^d}
+\cdots
+\phi_{01}
+=
+O(\Omega^{-5}).
+\]
+
+We take as $y$ the column vector
+\begin{equation}
+y=
+\left[
+\Omega^5\psi_1,\,
+\Omega^2\alpha,\,
+\Omega^2\bar{\alpha},\,
+\Omega^2\beta,\,
+\Omega^2\bar{\beta},\,
+\Omega^2\xi^3,\,
+\Omega^2\bar{\xi}^3,\,
+\Omega^2\xi^4,\,
+\Omega^2\bar{\xi}^4,\,
+\omega,\,
+\bar{\omega}
+\right]^T .
+\tag{6.20}
+\end{equation}
+
+By equations 3.51, 3.13, 3.14, 3.43, 3.44,
+
+\begin{equation}
+A=
+\begin{pmatrix}
+-3 & 0 & 6A & 6A & 0 & 0 & 0 & 0 & 0 & 1.5A & 0 \\
+ 0 & 0 & 0  & 0  & 0 & 0 & 0 & 0 & 0 & 0    & 0 \\
+ 0 & 0 & 0  & 0  & 0 & 0 & 0 & 0 & 0 & 0    & 0 \\
+ 0 & 0 & 0  & 0  & 0 & 0 & 0 & 0 & 0 & 0    & 0 \\
+ 0 & 0 & 0  & 0  & 0 & 0 & 0 & 0 & 0 & 0    & 0 \\
+ 0 & 0 & 0  & 0  & 0 & 0 & 0 & 0 & 0 & 0    & 0 \\
+ 0 & 0 & 0  & 0  & 0 & 0 & 0 & 0 & 0 & 0    & 0 \\
+ 0 & 0 & 0  & 0  & 0 & 0 & 0 & 0 & 0 & 0    & 0 \\
+ 0 & 0 & 0  & 0  & 0 & 0 & 0 & 0 & 0 & 0    & 0 \\
+ 0 & 0 & -1 & -1 & 0 & 0 & 0 & 0 & 0 & -2   & 0 \\
+ 0 & -1 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & 0    & -2
+\end{pmatrix}.
+\tag{6.21}
+\end{equation}
+
+$B$ and $b$ are $O(\Omega^{-1})$ expressions involving
+\[
+\rho,\quad
+\sigma,\quad
+\psi_0,\quad
+\frac{\partial\psi_0}{\partial\Omega},\quad
+\frac{\partial\psi_0}{\partial x^c},\quad
+\phi_{01},
+\quad\text{and}\quad
+\frac{\partial\phi_{01}}{\partial\Omega}.
+\]
+
+Thus
+\begin{equation}
+\begin{aligned}
+\psi_1 &= O(\Omega^{-5}),\\
+\alpha,\beta,\xi^3,\xi^4 &= O(\Omega^{-2}),\\
+\omega &= O(1).
+\end{aligned}
+\tag{6.22}
+\end{equation}
+
+since
+\[
+\tau = \bar{\alpha}+\beta,
+\]
+\[
+\tau = O(\Omega^{-2}).
+\]
+
+
+Using this we integrate equation (3.12) by the same
+method as above. We obtain
+\begin{equation}
+\tau
+=
+\tau^{0}(u,x^{i})\Omega^{-2}
++
+O(\Omega^{-3})
+\tag{6.23}
+\end{equation}
+
+We may make a null rotation of the tetrad on each null
+geodesic
+\begin{equation}
+\begin{aligned}
+l'_{\mu} &= l_{\mu},\\
+n'_{\mu} &= n_{\mu}
+          + a\bar{m}_{\mu}
+          + \bar{a}m_{\mu}
+          + a\bar{a}\,l_{\mu},\\
+m'_{\mu} &= m_{\mu}+a\,l_{\mu}.
+\end{aligned}
+\tag{6.24}
+\end{equation}
+
+$a$ is constant along the geodesic since the tetrad is
+parallelly transported.
+
+By taking
+\[
+a=-\frac{1}{2}\tau^{0}
+\]
+we may make
+\[
+\tau'^{0}=0.
+\]
+
+Under a null rotation
+\[
+\phi'_{01}
+=
+\phi_{01}
++
+a\phi_{00}.
+\]
+
+Thus until we have specified the null rotation we cannot
+impose a boundary condition on $\phi_{01}$ more severe than
+\[
+\phi_{01}=O(\Omega^{-5}).
+\]
+
+We will specify the null rotation by
+\[
+\tau^{0}=0
+\]
+and in that tetrad system will impose the boundary condition
+that
+\[
+\phi_{01}=O(\Omega^{-7})
+\]
+and is uniformly smooth.
+
+Then by using this condition on $\phi_{01}$ and
+\[
+\tau=O(\Omega^{-3}),
+\]
+by equation (3.44)
+\[
+\omega=O(\Omega^{-1}).
+\]
+
+
+using this in equation (3.51)
+\[
+\psi_1 = O(\Omega^{-6})
+\]
+
+then by equation (3.12)
+\[
+\tau = O(\Omega^{-4})
+\]
+
+putting this back in equation (3.44)
+\[
+\omega = O(\Omega^{-2}\log\Omega)
+\]
+
+by equation (3.51)
+\[
+\psi_1 = O(\Omega^{-7}\log\Omega)
+\]
+
+by equation (3.12)
+\[
+\tau = O(\Omega^{-5}\log\Omega)
+\]
+
+by equation (3.44)
+\[
+\omega
+=
+\omega^{0}\Omega^{-2}
++
+O(\Omega^{-3}\log\Omega)
+\]
+
+by equation (3.51)
+\begin{equation}
+\psi_1 = O(\Omega^{-7})
+\tag{6.25}
+\end{equation}
+
+by equation (3.12)
+\begin{equation}
+\tau = O(\Omega^{-5})
+\tag{6.26}
+\end{equation}
+
+by equation (3.44)
+\begin{equation}
+\omega
+=
+\omega^{0}\Omega^{-2}
++
+O(\Omega^{-3})
+\tag{6.27}
+\end{equation}
+
+By differentiating the equations used with respect to $x^i$,
+one may show that $\psi_1$, $\alpha$, $\beta$, $a$, $\xi^i$, $\omega$
+are uniformly smooth.
+
+Adding equations 3.53 and 3.60:
+\begin{equation}
+\begin{aligned}
+\delta\psi_1
+- D\psi_2
++ D\phi_{11}
+- \delta\phi_{01}
++ D\Lambda
+={}&
+\lambda\psi_0
+-3\rho\psi_2
++2\alpha\psi_1
+-\mu\phi_{00}
+-2\bar{\alpha}\phi_{10}
+\\
+&+2\rho\phi_{11}
++\sigma\phi_{20}.
+\end{aligned}
+\tag{6.28}
+\end{equation}
+
+
+we may use the lemma again with $y$
+
+\[
+y =
+\begin{bmatrix}
+\Omega^4 \psi_2 \\
+\Omega^2 \lambda \\
+\Omega \mu
+\end{bmatrix}.
+\]
+
+By equations 3.16, 3.17, 6.28,
+
+\[
+A =
+\begin{bmatrix}
+-2 & 0 & 3A \\
+0  & 0 & 0  \\
+0  & 0 & -1
+\end{bmatrix}.
+\]
+
+$B$ and $b$ are
+\[
+O(\Omega^{-2}).
+\]
+
+Therefore
+\begin{equation}
+\begin{aligned}
+\psi_2 &= O(\Omega^{-4}),\\
+\lambda &= O(\Omega^{-2}),\\
+\mu &= O(\Omega^{-1}),
+\end{aligned}
+\tag{6.29}
+\end{equation}
+and are uniformly smooth.
+
+From (6.29) and (3.17), we may show
+\[
+\mu
+=
+\frac{A}{2}\Omega^{-1}
++
+O(\Omega^{-2}\log\Omega).
+\]
+
+using this in (6.28)
+\[
+\psi_2
+=
+O(\Omega^{-5}\log\Omega).
+\]
+
+then by (3.17)
+\begin{equation}
+\mu
+=
+\frac{A}{2}\Omega^{-1}
++
+\mu^0(u,x^i)\Omega^{-2}
++
+O(\Omega^{-3}\log\Omega).
+\tag{6.30}
+\end{equation}
+
+and
+\[
+\psi_2 = O(\Omega^{-5}).
+\]
+
+
+Integrating the radial equations 3.13, 3.14, 3.15, 3.16,
+3.43, 3.45, 3.46,
+
+\begin{equation}
+\alpha
+=
+\alpha^{0}\Omega^{-2}
+-
+A\alpha^{0}\Omega^{-3}
++
+\frac{1}{2}
+\left(
+3A^{2}\alpha^{0}
+-
+\rho^{0}\alpha^{0}
++
+\bar{\sigma}^{0}\beta^{0}
+\right)\Omega^{-4}
++
+O(\Omega^{-5})
+\tag{6.31}
+\end{equation}
+
+\begin{equation}
+\beta
+=
+\beta^{0}\Omega^{-2}
+-
+A\beta^{0}\Omega^{-3}
++
+\frac{1}{4}
+\left(
+3A^{2}\beta^{0}
+-
+\rho^{0}\beta^{0}
++
+\bar{\beta}^{0}\sigma^{0}
+\right)\Omega^{-4}
++
+O(\Omega^{-5})
+\tag{6.32}
+\end{equation}
+
+\begin{equation}
+\gamma
+=
+\gamma^{0}
+-
+\frac{A}{2}\Omega^{-1}
++
+\frac{A^{2}}{4}\Omega^{-2}
++
+O(\Omega^{-3})
+\tag{6.33}
+\end{equation}
+
+\begin{equation}
+\lambda
+=
+\lambda^{0}\Omega^{-2}
+-
+A\left(
+\lambda^{0}
++
+\frac{\bar{\sigma}^{0}}{2}
+\right)\Omega^{-3}
++
+O(\Omega^{-4})
+\tag{6.34}
+\end{equation}
+
+\begin{equation}
+\xi^{c}
+=
+\xi^{0c}\Omega^{-2}
++
+A\Omega^{3}\xi^{0c}
+-
+\frac{1}{2}
+\left(
+3A^{2}\xi^{0c}
+-
+\rho^{0}\xi^{0c}
+-
+\bar{\xi}^{0c}\sigma^{0}
+\right)\Omega^{-4}
++
+O(\Omega^{-5})
+\tag{6.35}
+\end{equation}
+
+\begin{equation}
+X^{c}
+=
+X^{0c}
++
+O(\Omega^{-5})
+\tag{6.36}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+U
+={}&
+-\frac{1}{2}
+\left(
+\gamma^{0}
++
+\bar{\gamma}^{0}
+\right)\Omega^{2}
+-
+A\left(
+\gamma^{0}
++
+\bar{\gamma}^{0}
+\right)\Omega
+-
+\frac{3}{2}A^{2}
+\\
+&\quad\times
+\left(
+1+
+\gamma^{0}
++
+\bar{\gamma}^{0}
+\right)\log\Omega
++
+U^{0}
++
+O(\Omega^{-1})
+\end{aligned}
+\tag{6.37}
+\end{equation}
+
+Adding equation (3.55) $+\,2\times\overline{(3.59)}$,
+
+\begin{equation}
+\begin{aligned}
+\delta\psi_{2}
+-
+D\psi_{3}
++
+D\phi_{21}
+-
+\delta\phi_{20}
++
+2\delta\Lambda
+={}&
+2\lambda\psi_{1}
+-
+2\rho\psi_{3}
+\\
+&-
+\frac{1}{3}
+\left(
+\bar{\mu}+2\mu
+\right)\phi_{10}
++
+2(\beta-\bar{\alpha})\phi_{20}
++
+2\rho\phi_{21}.
+\end{aligned}
+\tag{6.38}
+\end{equation}
+
+
+Therefore
+\begin{equation}
+\psi_3
+=
+\psi_3^{0}\Omega^{-4}
++
+O(\Omega^{-5})
+\tag{6.39}
+\end{equation}
+
+By equation (3.18)
+\begin{equation}
+\nu
+=
+\nu^{0}
+-
+\frac{1}{2}\psi_3^{0}\Omega^{-2}
++
+O(\Omega^{-3})
+\tag{6.40}
+\end{equation}
+
+By the orthonormality relations (2.2),
+\[
+g^{ui}
+=
+X^i
+-
+\left(
+\xi^i\bar{\omega}
++
+\bar{\xi}^i\omega
+\right)
+=
+X^{i0}
++
+O(\Omega^{-4}),
+\]
+
+\[
+g^{ij}
+=
+-\left(
+\xi^i\bar{\xi}^j
++
+\bar{\xi}^i\xi^j
+\right),
+\qquad i,j=3,4,
+\]
+
+\begin{equation}
+g^{ij}
+=
+-\left(
+\xi^{i0}\bar{\xi}^{j0}
++
+\bar{\xi}^{i0}\xi^{j0}
+\right)
+\left(
+\Omega^{-4}
+-
+2A\Omega^{-5}
+\right)
++
+O(\Omega^{-6})
+\tag{6.41}
+\end{equation}
+
+By making the coordinate transformation
+\[
+u' = u,
+\]
+\[
+r' = r,
+\]
+\[
+x'^{\,i}
+=
+x^i
++
+C^i(u,x^c),
+\]
+
+where
+\begin{equation}
+\begin{aligned}
+C^3{}_{,1}
+&=
+-X^{30}\left(1+C^3{}_{,3}\right)
+-X^{40}C^3{}_{,4},
+\\
+C^4{}_{,1}
+&=
+-X^{40}\left(1+C^4{}_{,4}\right)
+-X^{30}C^4{}_{,3},
+\end{aligned}
+\tag{6.42}
+\end{equation}
+
+\[
+X^{i0}=0.
+\]
+
+We still have the coordinate freedom
+\[
+x'^i = D^i(x^j).
+\]
+
+We may use this to reduce the leading term of
+$g^{ij}$ $(i,j=3,4)$ to a conformally flat metric
+(c.f. Newman and Unti), that is:
+\begin{equation}
+g^{ij}
+=
+-2P\bar{P}\,\delta^{ij}
+\left(
+\Omega^{-4}
+-
+2A\Omega^{-5}
+\right)
++
+O(\Omega^{-6}).
+\tag{6.43}
+\end{equation}
+
+where
+\[
+\xi^{30} = -i\xi^{40} = P(u,x^i).
+\]
+
+\section{Non-radial Equations}
+
+By comparing coefficients of the various powers of $\Omega$
+in the non-radial equations of \S 3, relations between
+the integration constants of the radial equations may be
+obtained:
+
+In equation 3.23 the term in $\Omega^{-1}$ is
+\[
+-\frac{3}{4}A\left(\gamma^0+\bar{\gamma}^0\right)
+-\frac{3}{4}A
+\]
+
+therefore
+\begin{equation}
+\gamma^0+\bar{\gamma}^0=-1.
+\tag{7.1}
+\end{equation}
+
+therefore by (6.37)
+\begin{equation}
+U
+=
+\frac{1}{2}\Omega^2
++
+U^0
++
+O(\Omega^{-1}).
+\tag{7.2}
+\end{equation}
+
+In equation (3.50), the constant term is
+\[
+\nu^0
+\]
+
+therefore
+\begin{equation}
+\nu^0=0.
+\tag{7.3}
+\end{equation}
+
+By the $\Omega^{-2}$ term in (3.47)
+\[
+P_{,1}-P_{,1}
+=
+\left(\bar{\gamma}^0-\gamma^0\right)P.
+\]
+
+By the $\Omega^{-3}$ term
+\[
+P_{,1}-P_{,1}=0.
+\]
+
+therefore
+\begin{equation}
+\gamma^0=\bar{\gamma}^0=-\frac{1}{2}.
+\tag{7.4}
+\end{equation}
+
+\[
+P = S(x^i)e^{u}
+\]
+
+if
+\[
+S = |S|e^{i\phi}.
+\]
+
+By making a spatial rotation of the tetrad
+\[
+m'^{\mu}=e^{-i\phi}m^{\mu}
+\]
+we make $S$ real. We take
+\[
+S=\frac{1}{\sqrt{2}}
+\left(
+1+\frac{1}{4}\left[(x^3)^2+(x^4)^2\right]
+\right),
+\]
+the stereographic project factor for a 2-sphere.
+
+By the $\Omega^{-4}$ term in equation (3.48)
+\begin{equation}
+\begin{aligned}
+\alpha^0
+&=
+\frac{1}{2}\,\bar{\nabla}\bar{S}\,e^{u},
+\\
+\beta^0
+&=
+-\frac{1}{2}\,\nabla S\,e^{u}.
+\end{aligned}
+\tag{7.5}
+\end{equation}
+
+where
+\[
+\nabla
+=
+\frac{\partial}{\partial x^3}
++
+i\frac{\partial}{\partial x^4}.
+\]
+
+By the $\Omega^{-4}$ term in (3.21)
+\[
+\frac{1}{2}e^{2u}
+\left(
+S\nabla\bar{\nabla}S
++
+S\bar{\nabla}\nabla S
+\right)
+=
+-2\mu^0
+-
+\frac{A^2}{2}
+(\nabla P)(\bar{\nabla}\bar{P}).
+\]
+
+\begin{equation}
+\begin{aligned}
+\mu^0
+&=
+-\frac{A}{4}
+-\frac{S^2}{2}\,
+\nabla\bar{\nabla}\log S\,e^{2u}
+\\
+&=
+-\frac{A^2}{4}
+\left[
+1+e^{2u}
+\right].
+\end{aligned}
+\tag{7.6}
+\end{equation}
+
+By (3.59), (3.60), (3.61)
+\[
+\frac{\partial}{\partial u}\phi_{0i}
+=
+O(\Omega^{-7}).
+\]
+\[
+\frac{\partial}{\partial u}\phi_{00}
+=
+O(\Omega^{-7})
+\]
+
+\begin{equation}
+\frac{\partial\Lambda}{\partial u}
+=
+H\Omega^{-5}
++
+O(\Omega^{-6}\log\Omega)
+\tag{7.7}
+\end{equation}
+
+where
+\[
+H
+=
+-\frac{A^2}{8}
++
+\frac{3U^0}{4}
++
+\frac{\rho^0}{4}
++
+\frac{A^2e^{2u}}{8}.
+\]
+
+By making a coordinate transformation*
+\begin{equation}
+u'
+=
+u
+-
+\int_{u_0}^{u} H\,du''
+\tag{7.8}
+\end{equation}
+
+\[
+H'=0.
+\]
+
+therefore
+\[
+U^0
+=
+\frac{A^2}{6}
+-
+\frac{A^2e^{2u}}{6}
+-
+\frac{\rho^0}{3}.
+\]
+
+By the $\Omega^{-4}$ term in (3.26)
+\begin{equation}
+\rho^0{}_{,1}
++
+4U^0
+=
+-\frac{A^2}{2}
+\left(1+e^{2u}\right)
+\tag{7.9}
+\end{equation}
+
+therefore
+\[
+\rho^0{}_{,1}
+-
+\frac{7}{3}\rho^0
++
+\frac{7}{6}A^2
+-
+\frac{1}{6}A^2e^{2u}
+=
+0.
+\]
+
+\begin{equation}
+\rho^0
+=
+\frac{A^2}{2}
+\left(1-e^{2u}\right)
++
+C(x^i)e^{\frac{7}{3}u}.
+\tag{7.10}
+\end{equation}
+
+\bigskip
+\hrule
+\medskip
+
+\noindent
+*This transformation does not upset the boundary conditions
+on the hypersurface
+\[
+u=u^0.
+\]
+
+\medskip
+\hrule
+By the $\Omega^{-4}$ term in (3.25)
+\begin{equation}
+\lambda^0
+=
+\frac{1}{2}
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)
+\tag{7.11}
+\end{equation}
+
+By the $\Omega^{-4}$ term in (3.22)
+\begin{equation}
+\psi_3^0
+=
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)e^u \nabla S
+-
+\frac{1}{2}e^u S
+\nabla
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)
+\tag{7.12}
+\end{equation}
+
+By the $\Omega^{-2}$ term in (3.50)
+\[
+2\omega^0{}_{,1}
+-
+\omega^0{}_{,1}
+=
+\frac{1}{2}\psi_3^0
+\]
+
+\begin{equation}
+\omega^0
+=
+e^u
+\left(
+S\bar{\nabla}\bar{\sigma}^0
+-
+2\sigma^0\bar{\nabla}S
+\right)
++
+K(x^i)e^{2u}
+\tag{7.13}
+\end{equation}
+
+By the $\Omega^{-6}$ term in (3.20)
+\[
+e^u S\nabla\rho^0
++
+4\omega^0
+-
+e^u S\bar{\nabla}\bar{\sigma}^0
+=
+2\sigma^0\bar{\nabla}S\,e^u
+\]
+
+therefore
+\begin{equation}
+C=K=0
+\tag{7.14}
+\end{equation}
+
+therefore
+\begin{equation}
+U^0=0
+\tag{7.15}
+\end{equation}
+
+\begin{equation}
+\rho^0
+=
+\frac{A^2}{2}
+\left(
+1-e^{2u}
+\right)
+\tag{7.16}
+\end{equation}
+
+Using (7.6), (7.16), in (6.28)
+\[
+\psi_2
+=
+O(\Omega^{-6}\log\Omega)
+\]
+
+Then by (3.17)
+\begin{equation}
+\begin{aligned}
+\mu
+={}&
+\frac{A}{2}\Omega^{-1}
+-
+\frac{A^2}{4}
+\left(
+1+e^{2u}
+\right)\Omega^{-2}
+\\
+&-
+\frac{A^3}{2}
+\left(
+\frac{1}{2}+e^{2u}
+\right)\Omega^{-3}
++
+O(\Omega^{-4}\log\Omega)
+\end{aligned}
+\tag{7.17}
+\end{equation}
+
+Using this in (6.28)
+\begin{equation}
+\psi_2
+=
+O(\Omega^{-6})
+\tag{7.18}
+\end{equation}
+
+
+
+By (3.51), (3.59), (3.60), (3.61)
+\[
+\frac{\partial}{\partial u}\phi_{01}
+=
+O(\Omega^{-7})
+\]
+
+\[
+\frac{\partial}{\partial u}\phi_{00}
+=
+O(\Omega^{-9})
+\]
+
+\[
+\frac{\partial}{\partial u}\Lambda
+=
+O(\Omega^{-7})
+\]
+
+\begin{equation}
+\frac{\partial}{\partial u}\psi_0
+=
+O(\Omega^{-7})
+\tag{7.19}
+\end{equation}
+
+Therefore if the boundary conditions (5.1--4) hold on
+one null hypersurface, they will hold on succeeding hypersurfaces.
+
+By (3.57)
+\begin{equation}
+\psi_4
+=
+O(\Omega^{-2})
+\tag{7.20}
+\end{equation}
+
+The ``peeling off'' behaviour is therefore:
+\begin{equation}
+\begin{aligned}
+\psi_4 &= O(r^{-1}),\\
+\psi_3 &= O(r^{-2}),\\
+\psi_2 &= O(r^{-3}),\\
+\psi_1 &= O(r^{-7/2}),\\
+\psi_0 &= O(r^{-7/2}).
+\end{aligned}
+\tag{7.21}
+\end{equation}
+
+As mentioned before, this asymptotic behaviour is independent
+of the zero of $r$ and will hold for any affine parameter $r$.
+
+To perform the remaining integrations we will assume
+for definiteness:
+\begin{equation}
+\begin{aligned}
+\phi_{01}
+&=
+\phi_{01}^{0}\Omega^{-7}
++
+\phi_{01}^{1}\Omega^{-8}
++
+O(\Omega^{-9}),
+\\
+\psi_0
+&=
+\psi_0^{0}\Omega^{-7}
++
+\psi_0^{1}\Omega^{-8}
++
+O(\Omega^{-9}),
+\\
+\Lambda
+&=
+\frac{A}{4}\Omega^{-3}
++
+\Lambda^{0}\Omega^{-7}
++
+O(\Omega^{-8}),
+\\
+\phi_{00}
+&=
+3A\Omega^{-5}
++
+\phi_{00}^{0}\Omega^{-9}
++
+O(\Omega^{-10}).
+\end{aligned}
+\tag{7.22}
+\end{equation}
+
+Then:
+\begin{equation}
+\begin{aligned}
+\rho
+={}&
+-2\Omega^{-2}
+-A\Omega^{-3}
++\frac{A^2}{2}\left(1-e^{2u}\right)\Omega^{-4}
+\\
+&+
+\frac{A^3}{2}
+\left(1-2e^{2u}\right)\Omega^{-5}
+\\
+&+
+\left[
+A^4
+\left(
+\frac{5}{8}
+-\frac{7}{8}e^{2u}
+-\frac{1}{8}e^{4u}
+\right)
+-\frac{\sigma^0\bar{\sigma}^0}{2}
+\right]\Omega^{-6}
+\\
+&+
+\frac{1}{3}
+\left[
+A^5
+\left(
+-\frac{37}{8}
++8e^{2u}
++8e^{4u}
++2e^{6u}
+\right)
+-\phi_{00}^{0}
+\right.
+\\
+&\qquad\left.
++\bar{\sigma}^{0}
+\left(
+3A\sigma^{0}
++\psi_0^{0}
+\right)
++
+\sigma^{0}
+\left(
+3A\bar{\sigma}^{0}
++\bar{\psi}_0^{0}
+\right)
+\right]\Omega^{-7}
+\\
+&+
+O(\Omega^{-8}).
+\end{aligned}
+\tag{7.23}
+\end{equation}
+
+\begin{equation}
+\sigma
+=
+\sigma^{0}\Omega^{-4}
+-
+\left(
+2A\sigma^{0}
++
+\psi_0^{0}
+\right)\Omega^{-5}
++
+O(\Omega^{-6}).
+\tag{7.24}
+\end{equation}
+
+\begin{equation}
+\tau
+=
+-\frac{1}{3}
+\left(
+\phi_{01}^{0}
++
+\psi_1^{0}
+\right)\Omega^{-5}
++
+O(\Omega^{-6}\log\Omega).
+\tag{7.26}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\omega
+={}&
+\frac{e^u}{4}
+\left(
+S\bar{\nabla}\sigma^0
+-
+2\sigma^0\bar{\nabla}S
+\right)\Omega^{-2}
+\\
+&-
+\left[
+\frac{Ae^u}{4}
+\left(
+S\bar{\nabla}\sigma^0
+-
+2\sigma^0\bar{\nabla}S
+\right)
++
+\frac{1}{3}
+\left(
+\phi_{01}^0+\psi_1^0
+\right)
+\right]\Omega^{-3}
+\\
+&+
+O(\Omega^{-4}\log\Omega).
+\end{aligned}
+\tag{7.26}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\gamma
+={}&
+-\frac{1}{2}
+-\frac{A}{2}\Omega^{-1}
++\frac{A^2}{4}\Omega^{-2}
+-\frac{A^3}{4}\Omega^{-3}
+\\
+&+
+\frac{1}{4}
+\left(
+\frac{5}{4}A^4
+-\frac{\psi_0^0}{2}
+\right)\Omega^{-4}
++
+O(\Omega^{-5}).
+\end{aligned}
+\tag{7.27}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\mu
+={}&
+\frac{A}{2}\Omega^{-1}
+-
+\frac{A^2}{4}
+\left(
+1+e^{2u}
+\right)\Omega^{-2}
++
+\frac{A^3}{4}
+\left(
+1+2e^{2u}
+\right)\Omega^{-3}
+\\
+&-
+\frac{1}{2}
+\left[
+A^4
+\left(
+\frac{5}{8}
++\frac{7}{8}e^{2u}
++\frac{1}{8}e^{4u}
+\right)
++
+\frac{S^2}{2}
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\sigma^0{}_{,1}
+\right)
++
+\frac{\psi_0^0}{2}
+\right]\Omega^{-4}
+\\
+&+
+O(\Omega^{-5}).
+\end{aligned}
+\tag{7.28}
+\end{equation}
+
+\begin{equation}
+\lambda
+=
+\frac{1}{2}
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)\Omega^{-2}
+-
+\frac{A\bar{\sigma}^0{}_{,1}}{2}\Omega^{-3}
++
+O(\Omega^{-4}).
+\tag{7.29}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\nu
+={}&
+-\frac{1}{2}
+\left[
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)e^u\nabla S
+-
+\frac{1}{2}e^uS
+\nabla
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)
+\right]\Omega^{-2}
+\\
+&+
+O(\Omega^{-3}).
+\end{aligned}
+\tag{7.30}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\alpha
+={}&
+\frac{1}{2}e^u\bar{\nabla}S\,\Omega^{-2}
+-
+\frac{1}{2}Ae^u\bar{\nabla}S\,\Omega^{-3}
+\\
+&+
+\frac{1}{4}
+\left[
+A^2e^u\nabla S
+\left(
+\frac{S}{2}
++
+\frac{1}{2}e^u
+\right)
++
+e^u(\bar{\nabla}S)\bar{\sigma}^0
+\right]\Omega^{-4}
+\\
+&+
+O(\Omega^{-5}).
+\end{aligned}
+\tag{7.31}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+\xi^3
+={}&
+e^u S\,\Omega^{-2}
+-
+Ae^u S\,\Omega^{-3}
+\\
+&+
+\frac{1}{2}
+\left[
+A^2e^u S
+\left(
+\frac{5}{2}
++
+\frac{1}{2}e^{2u}
+\right)
+-
+e^u S\sigma^0
+\right]\Omega^{-4}
++
+O(\Omega^{-5}).
+\end{aligned}
+\tag{7.32}
+\end{equation}
+
+\begin{equation}
+U
+=
+\frac{1}{2}\Omega^2
+-
+\frac{1}{8}
+\left(
+\bar{\psi}_2^0+\psi_2^0
+\right)\Omega^{-2}
++
+O(\Omega^{-3}).
+\tag{7.33}
+\end{equation}
+
+\begin{equation}
+\chi^3
+=
+\frac{e^uS}{15}
+\left[
+\phi_{01}^0
++
+\bar{\phi}_{01}^0
++
+\psi_1^0
++
+\bar{\psi}_1^0
+\right]\Omega^{-5}
++
+O(\Omega^{-6}\log\Omega).
+\tag{7.34}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\psi_4^0
+={}&
+\left[
+-\bar{\sigma}^0
++
+\frac{3}{2}\bar{\sigma}^0{}_{,1}
+-
+\frac{1}{2}\bar{\sigma}^0{}_{,11}
+\right]\Omega^{-2}
+\\
+&+
+\left[
+-\frac{\bar{\sigma}^0}{2}
+-
+\frac{3}{4}\bar{\sigma}^0{}_{,1}
++
+\frac{1}{2}\bar{\sigma}^0{}_{,11}
+\right]\Omega^{-3}
+\\
+&+
+\left[
+A^{-2}
+\left(
+\bar{\sigma}^0
++
+\frac{3}{4}\bar{\sigma}^0{}_{,1}
+-
+\frac{3}{8}\bar{\sigma}^0{}_{,11}
+\right)
+\right.
+\\
+&\qquad
++
+\frac{A^2}{4}
+\left(
+-\bar{\sigma}^0
++
+\frac{3}{2}\bar{\sigma}^0{}_{,1}
+-
+\frac{1}{2}\bar{\sigma}^0{}_{,11}
+\right)e^{2u}
+\\
+&\qquad\left.
+-
+e^{2u}\bar{\nabla}S
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)^{3/2}
+\nabla
+\left[
+S
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)^{1/2}
+\right]
++
+\frac{3A}{8}\psi_0^0
+\right]\Omega^{-4}
+\\
+&+
+O(\Omega^{-5}).
+\end{aligned}
+\tag{7.35}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\psi_3
+={}&
+\left[
+e^u
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)\nabla S
+-
+e^uS\nabla
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\bar{\sigma}^0
+\right)
+\right]\Omega^{-4}
+\\
+&+
+\left[
+Ae^u
+\left(
+-2
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\frac{11}{8}\bar{\sigma}^0
+\right)\nabla S
+-
+S\nabla
+\left(
+\bar{\sigma}^0{}_{,1}
+-
+\frac{11}{8}\bar{\sigma}^0
+\right)
+\right)
++
+\frac{1}{2}\bar{\phi}_{01}^0
+\right]\Omega^{-5}
+\\
+&+
+O(\Omega^{-6}).
+\end{aligned}
+\tag{7.36}
+\end{equation}
+
+
+\begin{equation}
+\begin{aligned}
+\psi_2
+={}&
+\psi_2^0\Omega^{-6}
++
+\Bigg[
+-\frac{3}{2}A\psi_2^0
+-
+e^u S^2\bar{\nabla}
+\left(
+\frac{\psi_1^0-\phi_{01}^0}{S}
+\right)
+\\
+&\qquad
++
+\frac{1}{2}\psi_0^0
+\left(
+\bar{\sigma}^0{}_{,1}-\bar{\sigma}^0
+\right)
++
+\frac{3A}{4}\sigma^0\bar{\sigma}^0{}_{,1}
+-
+\frac{3A}{2}\sigma^0\bar{\sigma}^0
++
+16\Lambda^0
+\Bigg]\Omega^{-7}
+\\
+&+
+O(\Omega^{-8}\log\Omega).
+\end{aligned}
+\tag{7.37}
+\end{equation}
+
+where:
+\begin{equation}
+\begin{aligned}
+\psi_2^0-\bar{\psi}_2^0
+={}&
+\Bigg[
+e^{2u}
+\left(
+\frac{S^2}{2}\,
+\bar{\nabla}\bar{\nabla}\sigma^0
+-
+S(\bar{\nabla}S)(\bar{\nabla}\sigma^0)
+\right)
+\\
+&\qquad
++
+\sigma^0(\bar{\nabla}S)^2
+-
+\sigma^0S\bar{\nabla}\bar{\nabla}S
+-
+\frac{1}{2}\sigma^0\bar{\sigma}^0{}_{,1}
+\Bigg]
+-\mathrm{c.c.}
+\end{aligned}
+\tag{7.38}
+\end{equation}
+
+\[
+\psi_2^0+\bar{\psi}_2^0
+\quad\text{is undetermined}.
+\]
+
+\[
+\psi_1
+=
+\psi_1^0\Omega^{-7}
++
+\psi_1^1\Omega^{-8}\log\Omega
++
+\psi_1^2\Omega^{-8}
++
+O(\Omega^{-9}\log\Omega).
+\]
+
+where
+\begin{equation}
+\psi_1^0
+=
+e^u
+\left[
+S\bar{\nabla}
+\left(
+\psi_0^0+\frac{15}{4}\sigma^0
+\right)
+-
+\left(
+2\psi_0^0+\frac{15}{2}\sigma^0
+\right)
+\bar{\nabla}S
+\right]
+-
+3\phi_{01}^0.
+\tag{7.39}
+\end{equation}
+
+\begin{equation}
+\psi_1^1
+=
+-e^u
+\left(
+S\bar{\nabla}
+-
+2\bar{\nabla}S
+\right)
+\left(
+5A\psi_0^0
+-
+\psi_0^1
++
+15A\sigma^0
+\right)
++
+4\phi_{01}^1.
+\tag{7.40}
+\end{equation}
+
+\[
+\psi_1^2
+\quad\text{is undetermined}.
+\]
+
+By (3.54)
+\begin{equation}
+\psi_{1,1}^1
+=
+3\psi_1^1.
+\tag{7.41}
+\end{equation}
+
+
+Thus the $u$ derivative of $\psi_1^1$ depends only on itself
+and not on the radiation field. It therefore represents a
+type of disturbance unconnected with radiation. If it is
+zero on one hypersurface, it will remain zero. In this case
+it is possible to continue the expansions of all quantities
+in negative powers of $\Omega$ without any log terms appearing.
+
+\sectiontoc{The Asymptotic Group}
+
+The metric has the form:
+\[
+g^{11}=g^{13}=g^{14}=0,
+\qquad
+g^{12}=1,
+\]
+
+\[
+g^{22}
+=
+\Omega^2+O(\Omega^{-2}),
+\]
+
+\[
+g^{2i}
+=
+O(\Omega^{-4}),
+\]
+
+\[
+g^{ij}
+=
+-2P\bar{P}\,\delta^{ij}\Omega^{-4}
++
+2AP\bar{P}\,\delta^{ij}\Omega^{-5}
++
+O(\Omega^{-6}).
+\]
+
+The asymptotic group is the group of coordinate transformations
+that leave the form of the metric and of the boundary conditions
+unchanged. It can be derived most simply by considering the
+corresponding infinitesimal transformations:
+
+\begin{equation}
+x'^{\mu}
+=
+x^{\mu}
++
+\epsilon\,K^{\mu}(x^\nu).
+\tag{8.1}
+\end{equation}
+Then
+\begin{equation}
+\begin{aligned}
+\bar{\delta}g^{\mu\nu}
+&=
+g'^{\mu\nu}(x)-g^{\mu\nu}(x)
+\\
+&=
+-\epsilon
+\left(
+g^{\mu\alpha}K^\nu{}_{,\alpha}
++
+g^{\nu\alpha}K^\mu{}_{,\alpha}
+-
+g^{\mu\nu}{}_{,\alpha}K^\alpha
+\right).
+\end{aligned}
+\tag{8.2}
+\end{equation}
+
+\begin{equation}
+\bar{\delta}\Lambda
+=
+-\epsilon\,\Lambda_{,\alpha}K^\alpha.
+\tag{8.3}
+\end{equation}
+
+\begin{equation}
+\bar{\delta}\phi_{00}
+=
+\epsilon R_{1\alpha}K^\alpha{}_{,1}
++
+\frac{1}{2}\epsilon R_{11,\alpha}K^\alpha.
+\tag{8.4}
+\end{equation}
+
+\begin{equation}
+\bar{\delta}\phi_{01}
+=
+\frac{1}{2}\epsilon
+\left(
+R_{i\alpha}K^\alpha{}_{,1}
++
+R_{1\alpha}K^\alpha{}_{,i}
++
+R_{1i,\alpha}K^\alpha
+\right).
+\tag{8.5}
+\end{equation}
+
+To obtain the asymptotic group we demand
+\begin{equation}
+\begin{aligned}
+\bar{\delta}g^{11}
+&=
+\bar{\delta}g^{12}
+=
+\bar{\delta}g^{13}
+=
+\bar{\delta}g^{14}
+=
+0,
+\\
+\bar{\delta}g^{22}
+&=
+O(\Omega^{-2}),
+\\
+\bar{\delta}g^{2i}
+&=
+O(\Omega^{-4}),
+\\
+\bar{\delta}g^{ij}
+&=
+O(\Omega^{-6}),
+\\
+\bar{\delta}\Lambda
+&=
+O(\Omega^{-7}),
+\\
+\bar{\delta}\phi_{00}
+&=
+O(\Omega^{-9}),
+\\
+\bar{\delta}\phi_{0i}
+&=
+O(\Omega^{-7}).
+\end{aligned}
+\tag{8.6}
+\end{equation}
+
+By $\bar{\delta}g^{11}=0$,
+\begin{equation}
+K^1
+=
+K^{01}(u,x^i).
+\tag{8.7}
+\end{equation}
+
+% Continuation of Chapter 3: equations (8.8)--(8.15), Section 9,
+% and references. Transcribed from the original thesis scan.
+
+By $\bar{\delta}\Lambda=O(\Omega^{-7})$,
+\begin{equation}
+K^2=O(\Omega^{-2}).
+\tag{8.8}
+\end{equation}
+
+\[
+\bar{\delta}g^{12}
+=0
+=K^2{}_{,2}+K^1{}_{,1}
++g^{23}K^1{}_{,3}+g^{24}K^1{}_{,4}.
+\]
+
+\[
+\therefore\quad K^1{}_{,1}=0,
+\]
+
+\begin{equation}
+K^1=K^{01}(x^i).
+\tag{8.9}
+\end{equation}
+
+\[
+\bar{\delta}g^{13}
+=0
+=K^3{}_{,2}+g^{33}K^1{}_{,3}+g^{34}K^1{}_{,4}.
+\]
+
+\begin{equation}
+K^3
+=K^{03}(u,x^i)
+-4\bar{P}^{-1}P^2K^1{}_{,3}
++O(\Omega^{-3}).
+\tag{8.10}
+\end{equation}
+
+\[
+\bar{\delta}g^{23}
+=O(\Omega^{-4})
+=K^3{}_{,1}+O(\Omega^{-4}).
+\]
+
+\begin{equation}
+K^{03}=K^{03}(x^i).
+\tag{8.11}
+\end{equation}
+
+\[
+\bar{\delta}g^{ij}
+=g^{i2}K^j{}_{,2}
++g^{j2}K^i{}_{,2}
++g^{ik}K^j{}_{,k}
++g^{jk}K^i{}_{,k}
+-g^{ij}{}_{,k}K^k.
+\]
+
+\begin{equation}
+K^{03}{}_{,4}=-K^{04}{}_{,3},
+\tag{8.12}
+\end{equation}
+
+\begin{equation}
+K^{03}{}_{,3}=K^{04}{}_{,4},
+\tag{8.13}
+\end{equation}
+
+\begin{equation}
+2S K^{03}{}_{,3}
+-S_{,3}K^{03}
+-S_{,4}K^{04}
+-2S K^1
+=0.
+\tag{8.14}
+\end{equation}
+
+(8.12) and (8.13) imply that $K^{03}$ is an analytic function of
+$x^3+i x^4$. This is a consequence of the fact that we have
+reduced the leading term of $g^{ij}$ to a conformally flat
+form. Thus the only allowed transformations of $x^i$ are the
+conformal transformations of the form:
+
+\begin{equation}
+x^3+i x^4
+=
+\frac{a(x^3+i x^4)+b}{c(x^3+i x^4)+d},
+\qquad
+ad-bc=1.
+\tag{8.15}
+\end{equation}
+
+When the six parameters $a,b,c,d$ are given $K^1$ is uniquely
+determined by (8.14). $K^2$ is also uniquely determined. Thus
+the asymptotic group is isomorphic to the conformal group in
+two dimensions. Sachs~(7) has shown that this is isomorphic
+to the homogeneous Lorentz group. It is also however isomorphic
+to the group of motions of a 3-space of constant negative
+curvature which is the group of the unperturbed Robertson--
+Walker space. Thus the asymptotic group is the same as the
+group of the undisturbed space. It is not enlarged by the
+presence of radiation. This is interesting because in the
+case of gravitational radiation in empty, asymptotically flat
+space, it turns out that the asymptotic group contains not
+only the 10 dimensional inhomogeneous Lorentz group, the group
+of motions of flat space, but also infinite dimensional
+``supertranslations''. It has been suggested that these
+supertranslations might have some physical significance in
+elementary particle physics. The above result would seem
+to indicate that this is probably not the case since our
+universe is almost certainly not asymptotically flat though
+it may be asymptotically Robertson--Walker.
+
+\sectiontoc{What an observer would measure}
+
+The velocity vector $V_m$ of an observer moving with the
+dust will be:
+\begin{equation}
+\begin{aligned}
+V_1&=\Omega^{-1}+O(\Omega^{-5}),\\
+V_2&=\frac{1}{2}\Omega+O(\Omega^{-3}),\\
+V_3&=O(\Omega^{-3}),\\
+V_4&=O(\Omega^{-3}).
+\end{aligned}
+\tag{9.1}
+\end{equation}
+
+$q_m$, the projection of the wave vector $l^a$ in the
+observer's rest-space (the apparent direction of the wave)
+will be:
+\[
+q_m=\delta_m{}^2-V_mV^1.
+\]
+
+\begin{equation}
+\begin{aligned}
+q_1&=\Omega^{-2}+O(\Omega^{-5}),\\
+q_2&=\frac{1}{2}+O(\Omega^{-4}),\\
+q_3&=O(\Omega^{-4}),\\
+q_4&=O(\Omega^{-4}).
+\end{aligned}
+\tag{9.2}
+\end{equation}
+
+The observer's orthonormal tetrad may be completed by two
+space-like unit vectors $s_m$ and $t_m$:
+\begin{equation}
+\begin{alignedat}{4}
+s_1&=O(\Omega^{-4}), &\qquad& t_1&&=O(\Omega^{-4}),\\
+s_2&=O(\Omega^{-2}), && t_2&&=O(\Omega^{-2}),\\
+s_3&=\frac{1}{\sqrt{2}}, && t_3&&=-\frac{i}{\sqrt{2}},\\
+s_4&=\frac{1}{\sqrt{2}}, && t_4&&=\frac{i}{\sqrt{2}}.
+\end{alignedat}
+\tag{9.3}
+\end{equation}
+
+We write
+\[
+e_a{}^{\alpha}=(V^{\alpha},q^{\alpha},s^{\alpha},t^{\alpha}).
+\]
+
+By measuring the relative accelerations of neighbouring dust
+particles, the observer may determine the `electric'
+components of the gravitational wave:
+\[
+E_{ab}=-C_{apbq}V^pV^q.
+\]
+
+In the observer's tetrad this has components
+\begin{equation}
+\begin{aligned}
+E={}&
+\begin{pmatrix}
+0&0&0\\
+0&1&0\\
+0&0&-1
+\end{pmatrix}O(\Omega^{-4})
++
+\begin{pmatrix}
+0&0&0\\
+0&0&1\\
+0&1&0
+\end{pmatrix}O(\Omega^{-4})
+\\[1ex]
+&+
+\begin{pmatrix}
+0&1&1\\
+1&0&0\\
+1&0&0
+\end{pmatrix}O(\Omega^{-5})
++
+\begin{pmatrix}
+0&1&-1\\
+1&0&0\\
+-1&0&0
+\end{pmatrix}O(\Omega^{-5})
+\\[1ex]
+&+
+\begin{pmatrix}
+1&0&0\\
+0&-\frac{1}{2}&0\\
+0&0&-\frac{1}{2}
+\end{pmatrix}O(\Omega^{-6}).
+\end{aligned}
+\tag{9.4}
+\end{equation}
+
+This should be compared to the behaviour for asymptotically
+flat space for which
+\begin{equation}
+\begin{aligned}
+E={}&
+\begin{pmatrix}
+0&0&0\\
+0&1&0\\
+0&0&-1
+\end{pmatrix}O(r^{-1})
++
+\begin{pmatrix}
+0&0&0\\
+0&0&1\\
+0&1&0
+\end{pmatrix}O(r^{-1})
+\\[1ex]
+&+
+\begin{pmatrix}
+0&1&1\\
+1&0&0\\
+1&0&0
+\end{pmatrix}O(r^{-2})
++
+\begin{pmatrix}
+0&1&-1\\
+1&0&0\\
+-1&0&0
+\end{pmatrix}O(r^{-2})
+\\[1ex]
+&+
+\begin{pmatrix}
+1&0&0\\
+0&-\frac{1}{2}&0\\
+0&0&-\frac{1}{2}
+\end{pmatrix}O(r^{-3}).
+\end{aligned}
+\tag{9.5}
+\end{equation}
+
+\sectiontoc{References}
+
+\begin{enumerate}
+\item H. Bondi, M. G. J. van der Burg and A. W. K. Metzner,
+  \emph{Proc. Roy. Soc. A} \textbf{269}, 21 (1962).
+
+\item R. K. Sachs,
+  \emph{Proc. Roy. Soc. A} \textbf{270}, 103 (1962).
+
+\item E. T. Newman and R. Penrose,
+  \emph{J. Math. Phys.} \textbf{3}, 566 (1962).
+
+\item E. T. Newman and T. W. J. Unti,
+  \emph{J. Math. Phys.} \textbf{3}, 891 (1962).
+
+\item D. Norman, Thesis, London University (1963).
+
+\item R. Penrose,
+  \emph{Proc. Roy. Soc. A} \textbf{284}, 159 (1965).
+
+\item R. K. Sachs,
+  \emph{Phys. Rev.} \textbf{128}, 2851 (1962).
+\end{enumerate}

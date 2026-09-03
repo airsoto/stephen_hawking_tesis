@@ -1,6 +1,15 @@
-%========================
+%============================================================================================
+%============================================================================================
+%============================================================================================
+%=============================================================================================
 % With my deepest admiration for the figure and work of Stephen Hawking. Version 1.0 – Angel Soto airsoto@googlemail.com
-%
+%============================================================================================
+%============================================================================================
+%============================================================================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Si has colaborado, puedes poner aquí tu nombre / email (o la información que desees): 
 %
 %
 %
@@ -21,23 +30,57 @@
 \usepackage[spanish]{babel}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
-\usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{setspace}
-\usepackage{tocbibind}
 \usepackage{csquotes}
-\usepackage{biblatex} % requiere biber
-\addbibresource{references.bib}
+
+
 \usepackage[hidelinks]{hyperref}
 % --- CONFIGURACIÓN ---
 \geometry{margin=3cm}
+
+
 \onehalfspacing % interlineado 1.5
-\renewcommand{\bibname}{}    % para book o report
-\renewcommand{\refname}{}    % para article
-\addto\captionsspanish{\renewcommand{\contentsname}{List of Contents}}
+
+\renewcommand{\bibname}{References}
+
+\addto\captionsspanish{%
+  \renewcommand{\contentsname}{List of Contents}%
+}
+
 \renewcommand*{\chapterformat}{}
 
+% Quitar todos los números del índice
+\newcommand*{\hideentrynumber}[1]{}
+
+\DeclareTOCStyleEntries[
+  entrynumberformat=\hideentrynumber,
+  numwidth=0pt
+]{tocline}{
+  chapter,
+  section,
+  subsection,
+  subsubsection,
+  paragraph,
+  subparagraph
+}
+
 \renewcommand*{\chaptermark}[1]{\markboth{#1}{}}
+
+% Sección sin número que aparece en el índice
+\newcommand{\sectiontoc}[1]{%
+  \addsec{#1}%
+}
+
+% Subsección sin número que aparece en el índice
+\newcommand{\tocsubsection}[1]{%
+  \subsection*{#1}%
+  \phantomsection
+  \addcontentsline{toc}{subsection}{#1}%
+}
+% Permitir matrices de hasta 11 columnas
+\setcounter{MaxMatrixCols}{11}
+
 
 % --- PORTADA ---
 \begin{document}
@@ -50,12 +93,13 @@
     {\Large \textbf{EXPANDING UNIVERSES}}\\[3cm]
     
     {\Large S. W. Hawking}\\[1cm]
-    {\large Trinity Hall}\\[4cm]
-    
+{\large Trinity Hall}\\[1cm]
+
+\includegraphics[width=0.15\textwidth]{figures/uni_lib_cambridge.png}\\[3cm]    
     % --- Sello ficticio de biblioteca (opcional, se puede comentar) ---
     %\includegraphics[width=0.25\textwidth]{figures/cambridge_stamp.png}\\[2cm]
     
-    {\large Thesis presented for the Degree of Ph.D.}\\[0.3cm]
+    {\large Thesis presented for the Degree of Ph.D.}\\[0.5cm]
     {\large in the University of Cambridge}\\
     
 \end{titlepage}
@@ -93,11 +137,11 @@
 Expanding Universe }
 \input{chapters/chapter3}
 
-
+\chapter{Chapter 4 \\Singularities }
+\input{chapters/chapter4}
 
 
 % --- BIBLIOGRAFÍA ---
-\backmatter
-\printbibliography
+
 
 \end{document}
